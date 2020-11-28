@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ShowkitApp">
-        <activity android:name=".MainActivity">
+        <activity android:name=".ContinueMobActivity"></activity>
+        <activity android:name=".EnterPasscodeActivity" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".OtpScreen" />
+        <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
