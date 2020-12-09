@@ -11,5 +11,42 @@
     <color name="dark_grey">#575555</color>
     <color name="light_red">#f9f5f5</color>
     <color name="marron">#e0694d</color>
+    <color name="red">#FF3100</color>
+    <color name="marron_full">#A53D24</color>
+
+    <color name="colorPrimary">#FF3700B3</color>
+    <color name="colorStatusBar">#669fd0</color>
+
+
+    <color name="blue_pg">#14B3E3</color>
+
+    <color name="textColorDark">#1f2421</color>
+    <color name="textColorDark50">#7a1f2421</color>
+    <color name="gray_input_bottom_border">#f1f1f1</color>
+    <color name="lightGrey">#F6F8F9</color>
+    <color name="tab_indicator_color">#57a54f</color>
+    <color name="tab_text_color">#bcbcbc</color>
+    <color name="tab_selected_text_color">#57a54f</color>
+    <color name="addCustomerTextAlpha">#b3404040</color>
+    <color name="addCustomerTextAlpha40">#66404040</color>
+    <color name="headerColor">#eaeaea</color>
+
+
+    <color name="grey_color">#D0D0D0</color>
+    <color name="grey_lighter">#E0E0E0</color>
+    <color name="transparent">#00ff001C</color>
+    <color name="green">#57a54f</color>
+    <color name="lightest_grey">#F6F8F9</color>
+    <color name="lightest_green">#CCE5C8</color>
+    <color name="bg_user_color">#339595</color>
+
+    <color name="gold_color">#fec431</color>
+    <color name="whiter">#FFFFFF</color>
+    <color name="orange">#F4A755</color>
+    <color name="blackr">#000000</color>
+    <color name="grey_clr">#D4D3D3</color>
+
+
+
 
 </resources>

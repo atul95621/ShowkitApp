@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/franklin_gothic_book_regular"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Ttitle"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/franklin_gothic_book_regular"
+        android:gravity="start"
+        android:padding="10dp"
+        android:text="15 minutes"
+        android:textColor="@color/dark_grey" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/franklin_gothic_book_regular"
+        android:gravity="start"
+        android:padding="10dp"
+        android:text="1 hour"
+        android:textColor="@color/dark_grey" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/franklin_gothic_book_regular"
+        android:gravity="start"
+        android:padding="10dp"
+        android:text="2 hour"
+        android:textColor="@color/dark_grey" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/franklin_gothic_book_regular"
+        android:gravity="start"
+        android:padding="10dp"
+        android:text="4 hour"
+        android:textColor="@color/dark_grey" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/franklin_gothic_book_regular"
+        android:gravity="start"
+        android:padding="10dp"
+        android:text="1 day"
+        android:textColor="@color/dark_grey" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/franklin_gothic_book_regular"
+        android:gravity="start"
+        android:padding="10dp"
+        android:text="1 year"
+        android:textColor="@color/dark_grey" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/franklin_gothic_book_regular"
+        android:gravity="start"
+        android:padding="10dp"
+        android:text="Cancel"
+        android:textColor="@color/dark_grey" />
+</LinearLayout>

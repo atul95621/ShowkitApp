@@ -81,6 +81,10 @@
                         android:background="@null"
                         android:gravity="center"
                         android:letterSpacing="3"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:maxLength="4"
+                        android:singleLine="true"
                         android:text="2345"
                         android:textColor="@color/marron"
                         android:textStyle="bold" />

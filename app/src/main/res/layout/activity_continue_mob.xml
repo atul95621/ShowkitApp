@@ -9,7 +9,7 @@
     tools:context=".Login">
 
     <ScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
 
@@ -32,9 +32,12 @@
 
             <ScrollView
                 android:layout_width="match_parent"
+                android:fillViewport="true"
                 android:layout_height="match_parent">
 
                 <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="20dp"
@@ -42,10 +45,10 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:layout_marginTop="100dp"
                         android:layout_width="350dp"
                         android:layout_height="250dp"
                         android:layout_gravity="center"
-                        android:layout_marginTop="100dp"
                         android:src="@drawable/ic_continue">
 
                     </ImageView>
@@ -138,6 +141,9 @@
                             android:layout_width="0dp"
                             android:layout_height="25dp"
                             android:layout_weight="1"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:singleLine="true"
                             android:background="@null"
                             android:text="+91 67898678900" />
 
@@ -165,18 +171,18 @@
                         android:textSize="20dp" />
 
                     <LinearLayout
+                        android:layout_marginTop="50dp"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_gravity="bottom"
-                        android:layout_marginTop="50dp"
                         android:layout_weight="1"
                         android:gravity="bottom"
+                        android:paddingBottom="15dp"
                         android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
                             android:gravity="center"
                             android:orientation="horizontal">
 
@@ -196,7 +202,7 @@
 
                         <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="5dp"

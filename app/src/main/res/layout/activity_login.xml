@@ -38,10 +38,10 @@
                     android:src="@drawable/ic_slicee" />
 
                 <TextView
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
                     android:text="Welcome to Showkit"
                     android:textColor="@color/black"
                     android:textSize="25dp"
@@ -87,6 +87,36 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="2dp"
+                        android:background="@color/dark_grey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/franklin_gothic_bold"
+                        android:text="Or"
+                        android:textColor="@color/black">
+
+                    </TextView>
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="2dp"
+                        android:background="@color/dark_grey" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:id="@+id/linGoogle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -118,7 +148,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="bottom"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:gravity="bottom"
                     android:orientation="vertical">
@@ -140,18 +171,18 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
                             android:text="We are not storing any private information"
-                            android:textSize="16sp" />
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="5dp"
                         android:gravity="center"
-                        android:text="By continue you aggree to pur Terms and conditon and Privacy Policy"
-                        android:textSize="14sp" />
+                        android:text="By continue you agree to pur Terms and conditon and Privacy Policy"
+                        android:textSize="12sp" />
                 </LinearLayout>
 
             </LinearLayout>
