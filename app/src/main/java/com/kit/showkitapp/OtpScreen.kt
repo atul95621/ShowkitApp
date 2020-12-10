@@ -15,7 +15,7 @@ class OtpScreen : AppCompatActivity() {
 
         tvContinue.setOnClickListener()
         {
-            var intent = Intent(this, EnterPasscodeActivity::class.java)
+            var intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
 

@@ -11,6 +11,7 @@
         android:layout_height="match_parent">
 
     <LinearLayout
+        android:id="@+id/linFollow"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,6 +36,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linNotification"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -58,6 +60,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linPrivacy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -81,6 +84,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linSecurity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -104,6 +108,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -127,6 +132,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linHelp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -150,6 +156,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linAbout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -173,6 +180,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

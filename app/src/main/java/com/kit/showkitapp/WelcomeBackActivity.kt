@@ -4,22 +4,23 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
-import kotlinx.android.synthetic.main.activity_enter_passcode.*
+import kotlinx.android.synthetic.main.activity_welcome_back.*
 
-class EnterPasscodeActivity : AppCompatActivity() {
+class WelcomeBackActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_enter_passcode)
+        setContentView(R.layout.activity_welcome_back)
 
         getWindow().setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         );
-
-        imgNextScreen.setOnClickListener()
+        tvLoginAs.setOnClickListener()
         {
-            var intent = Intent(this, ProfileAddActivity::class.java)
+            var intent = Intent(this, PasswrdReturningActivity::class.java)
             startActivity(intent)
         }
+
+
     }
 }

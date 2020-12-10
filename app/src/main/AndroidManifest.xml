@@ -9,24 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ShowkitApp">
-        <activity android:name=".chat.ChatActivity"></activity>
-        <!-- <activity android:name=".VerifyOtpActivity"></activity> -->
+        <activity android:name=".WelcomeBackActivity"></activity>
+        <activity android:name=".chat.ChatActivity" />
+        <activity android:name=".VerifyOtpActivity" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".SplashActivity"
             android:label="@string/title_activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- <activity android:name=".ProfileAddActivity"></activity> -->
+        </activity>
         <activity android:name=".PasswrdReturningActivity" />
         <activity android:name=".GenderBirthActivity" />
-        <activity android:name=".SplashActivity" />
+        <activity android:name=".Login" />
         <activity android:name=".ContinueMobActivity" />
         <activity android:name=".EnterPasscodeActivity" />
         <activity android:name=".ForgotPassword" />
         <activity android:name=".OtpScreen" />
-        <activity android:name=".Login" />
+        <activity android:name=".HomeActivity" />
         <activity android:name=".ProfileAddActivity" />
     </application>
 

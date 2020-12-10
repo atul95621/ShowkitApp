@@ -1,10 +1,13 @@
 package com.kit.showkitapp
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
 import kotlinx.android.synthetic.main.activity_gender_birth.*
+import kotlinx.android.synthetic.main.activity_gender_birth.imgNext
+import kotlinx.android.synthetic.main.activity_profile_add.*
 import java.util.*
 import javax.xml.datatype.DatatypeConstants.MONTHS
 
@@ -22,6 +25,12 @@ class GenderBirthActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         );
+
+        imgNext.setOnClickListener()
+        {
+            var intent = Intent(this, WelcomeBackActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun openDatePicker() {

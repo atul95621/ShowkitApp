@@ -1,5 +1,6 @@
 package com.kit.showkitapp
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -32,5 +33,11 @@ class VerifyOtpActivity : AppCompatActivity() {
             Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
         )
         tvSendAgain.text = spannab
+
+        imgNext.setOnClickListener()
+        {
+            var intent = Intent(this, EnterPasscodeActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -18,13 +18,11 @@ class SplashActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         );
 
-
-
         Handler().postDelayed(Runnable { // This method will be executed once the timer is over
             val i = Intent(this@SplashActivity, Login::class.java)
             startActivity(i)
             finish()
-        }, 3000)
+        }, 2000)
 
     }
 }

@@ -3,17 +3,75 @@ package com.kit.showkitapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.View
+import android.widget.PopupMenu
+import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.kit.showkitapp.fargment.TrendingFragment
+import com.kit.showkitapp.chat.ChatActivity
+import com.kit.showkitapp.fargment.*
 import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.item_layout_trending.*
+import kotlinx.android.synthetic.main.item_layout_trending.view.*
 
 class HomeActivity : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        openFragment(TrendingFragment(this))
+        openFragment(DashboardFragment(this))
+
+        linProfile.setOnClickListener()
+        {
+            hideHeader()
+            openFragment(ProfileEditFragment(this))
+
+        }
+
+        linChat.setOnClickListener()
+        {
+            hideHeader()
+            var intent = Intent(this, ChatActivity::class.java)
+            startActivity(intent)
+        }
+
+        linSearch.setOnClickListener()
+        {
+            showHeader()
+            openFragment(SettingFragment(this))
+        }
+
+        linHome.setOnClickListener()
+        {
+            hideHeader()
+            openFragment(DashboardFragment(this))
+        }
+    }
+
+    fun openBottomSheet() {
+        MyBottomSheetDialogFragment(this).apply {
+            show(supportFragmentManager, MyBottomSheetDialogFragment.TAG)
+        }
+    }
+
+    fun closeBottomSheet() {
+        MyBottomSheetDialogFragment(this).apply {
+            dismiss()
+        }
+    }
+
+    fun openReplyBottomSheet() {
+        ReplyBottomSheet(this).apply {
+            show(supportFragmentManager, ReplyBottomSheet.TAG)
+        }
+    }
+
+    fun closeReplyBottomSheet() {
+        ReplyBottomSheet(this).apply {
+            dismiss()
+        }
     }
 
     fun setTitleName(title: String) {
@@ -43,5 +101,9 @@ class HomeActivity : AppCompatActivity() {
 
     fun hideHeader() {
         frameHeader.visibility = View.GONE
+    }
+
+    fun showHeader() {
+        frameHeader.visibility = View.VISIBLE
     }
 }

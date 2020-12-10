@@ -15,7 +15,7 @@ class ContinueMobActivity : AppCompatActivity() {
 
         tvCont.setOnClickListener()
         {
-            var intent = Intent(this, OtpScreen::class.java)
+            var intent = Intent(this, VerifyOtpActivity::class.java)
             startActivity(intent)
         }
 

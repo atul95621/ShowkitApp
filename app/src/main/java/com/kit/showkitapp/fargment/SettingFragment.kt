@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import com.kit.showkitapp.HomeActivity
 import com.kit.showkitapp.R
+import kotlinx.android.synthetic.main.fragment_setting.view.*
+
 class SettingFragment(var homeActivity: HomeActivity) : Fragment() {
 
 
@@ -26,5 +28,39 @@ class SettingFragment(var homeActivity: HomeActivity) : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         homeActivity.setTitleName("Setting")
+        homeActivity.showHeader()
+
+        view.linFollow.setOnClickListener()
+        {
+            homeActivity.openFragment(FollowInviteFriendFragment(homeActivity))
+        }
+        view.linHelp.setOnClickListener()
+        {
+            homeActivity.openFragment(HelpFragment(homeActivity))
+        }
+        view.linAbout.setOnClickListener()
+        {
+            homeActivity.openFragment(AboutFragment(homeActivity))
+        }
+        view.linSecurity.setOnClickListener()
+        {
+            homeActivity.openFragment(SecurityFragment(homeActivity))
+        }
+        view.linNotification.setOnClickListener()
+        {
+            homeActivity.openFragment(NotificationsFragment(homeActivity))
+        }
+        view.linPrivacy.setOnClickListener()
+        {
+            homeActivity.openFragment(PrivacyFragment(homeActivity))
+        }
+        view.linTheme.setOnClickListener()
+        {
+            homeActivity.openFragment(ThemeFragment(homeActivity))
+        }
+        view.linAccount.setOnClickListener()
+        {
+            homeActivity.openFragment(AccountFragment(homeActivity))
+        }
     }
 }
