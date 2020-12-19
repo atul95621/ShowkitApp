@@ -14,9 +14,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/franklin_gothic_bold"
+            android:fontFamily="@font/open_sans_semibold"
 
             android:text="Account Privacy"
             android:textColor="@color/black"
@@ -27,20 +27,20 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:padding="10dp">
+            android:padding="15dp">
 
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/circle_blue_small" />
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_privacy" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                android:fontFamily="@font/open_sans_regular"
                 android:text="Private Account"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -59,9 +59,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/franklin_gothic_bold"
+            android:fontFamily="@font/open_sans_semibold"
 
             android:text="Interactions"
             android:textColor="@color/black"
@@ -72,19 +72,19 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:padding="10dp">
+            android:padding="15dp">
 
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/circle_blue_small" />
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_comm_empty" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="20dp"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/open_sans_regular"
 
                 android:text="Comments"
                 android:textColor="@color/black"
@@ -95,19 +95,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:padding="10dp">
+            android:padding="15dp">
 
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/circle_blue_small" />
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_tags" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="20dp"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/open_sans_regular"
                 android:text="Tags"
 
                 android:textColor="@color/black"
@@ -118,19 +118,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:padding="10dp">
+            android:padding="15dp">
 
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/circle_blue_small" />
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_mentions" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="20dp"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/open_sans_regular"
                 android:text="Mentions"
 
                 android:textColor="@color/black"
@@ -141,19 +141,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:padding="10dp">
+            android:padding="15dp">
 
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/circle_blue_small" />
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_stories"
+                android:tint="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="20dp"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/open_sans_regular"
                 android:text="Story"
 
                 android:textColor="@color/black"
@@ -164,19 +165,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:padding="10dp">
+            android:padding="15dp">
 
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/circle_blue_small" />
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_guide" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="20dp"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/open_sans_regular"
                 android:text="Guides"
 
                 android:textColor="@color/black"
@@ -187,19 +188,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:padding="10dp">
+            android:padding="15dp">
 
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/circle_blue_small" />
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_status" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="20dp"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/open_sans_regular"
                 android:text="Activity Status"
 
                 android:textColor="@color/black"
@@ -210,19 +211,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:padding="10dp">
+            android:padding="15dp">
 
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/circle_blue_small" />
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_coomm" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="20dp"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/open_sans_regular"
                 android:text="Messages"
 
                 android:textColor="@color/black"
@@ -237,9 +238,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/franklin_gothic_bold"
+            android:fontFamily="@font/open_sans_semibold"
 
             android:text="Connections"
             android:textColor="@color/black"
@@ -250,19 +251,19 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:padding="10dp">
+            android:padding="15dp">
 
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/circle_blue_small" />
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_restricted" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="20dp"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/open_sans_regular"
 
                 android:text="Restricted Accounts"
                 android:textColor="@color/black"
@@ -273,19 +274,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:padding="10dp">
+            android:padding="15dp">
 
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/circle_blue_small" />
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_circle_cross" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="20dp"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/open_sans_regular"
 
                 android:text="Blocked Accounts"
                 android:textColor="@color/black"
@@ -296,19 +297,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:padding="10dp">
+            android:padding="15dp">
 
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/circle_blue_small" />
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/silence" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="20dp"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/open_sans_regular"
 
                 android:text="Muted Accounts"
                 android:textColor="@color/black"
@@ -319,19 +320,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:padding="10dp">
+            android:padding="15dp">
 
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/circle_blue_small" />
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/group" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="20dp"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/open_sans_regular"
 
                 android:text="Accounts you follow"
                 android:textColor="@color/black"

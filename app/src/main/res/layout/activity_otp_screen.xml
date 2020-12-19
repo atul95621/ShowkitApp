@@ -30,7 +30,7 @@
             android:text="Verify your number"
             android:textColor="@color/white"
             android:textSize="28sp"
-            android:fontFamily="@font/franklin_gothic_bold"/>
+            android:fontFamily="@font/open_sans_semibold"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -38,7 +38,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:gravity="center"
-            android:fontFamily="@font/franklin_gothic_book_regular"
+             android:fontFamily="@font/open_sans_regular"
             android:maxWidth="300dp"
             android:text="Enter your OTP code here that we have to 456787654"
             android:textColor="@color/white"
@@ -59,7 +59,7 @@
                 android:text="2"
                 android:textColor="@color/white"
                 android:textSize="28sp"
-                android:fontFamily="@font/franklin_gothic_bold"/>
+                android:fontFamily="@font/open_sans_semibold"/>
 
             <TextView
                 android:layout_width="70dp"
@@ -70,7 +70,7 @@
                 android:text="3"
                 android:textColor="@color/white"
                 android:textSize="28sp"
-                android:fontFamily="@font/franklin_gothic_bold" />
+                android:fontFamily="@font/open_sans_semibold" />
 
             <TextView
                 android:layout_width="70dp"
@@ -82,7 +82,7 @@
                 android:text="6"
                 android:textColor="@color/white"
                 android:textSize="28sp"
-                android:fontFamily="@font/franklin_gothic_bold"/>
+                android:fontFamily="@font/open_sans_semibold"/>
 
             <TextView
                 android:layout_width="70dp"
@@ -93,7 +93,7 @@
                 android:text="8"
                 android:textColor="@color/white"
                 android:textSize="28sp"
-                android:fontFamily="@font/franklin_gothic_bold" />
+                android:fontFamily="@font/open_sans_semibold" />
         </LinearLayout>
 
         <TextView
@@ -106,13 +106,13 @@
             android:background="@drawable/orange_graf"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Continue"  android:fontFamily="@font/franklin_gothic_book_regular"
+            android:text="Continue"   android:fontFamily="@font/open_sans_regular"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"  android:fontFamily="@font/franklin_gothic_book_regular"
+            android:layout_height="wrap_content"   android:fontFamily="@font/open_sans_regular"
             android:layout_marginTop="30dp"
             android:gravity="center"
             android:text="Resend OTP"

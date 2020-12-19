@@ -31,7 +31,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="10dp"
+                android:textSize="18dp"
+                android:paddingStart="10dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/open_sans_regular"
                 android:text="iamchira"
                 android:textColor="@color/black" />
 
@@ -59,6 +62,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
@@ -98,7 +102,7 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginEnd="10dp"
-                android:src="@drawable/ic_baseline_cloud_download_24"
+                android:src="@drawable/download_arrow"
                 app:tint="@color/dark_grey" />
 
             <ImageView
@@ -117,7 +121,7 @@
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
             android:layout_weight="1"
-            android:fontFamily="@font/franklin_gothic_book_regular"
+             android:fontFamily="@font/open_sans_semibold"
             android:text="1,233 likes"
             android:textColor="@color/black" />
 
@@ -127,7 +131,7 @@
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
             android:layout_weight="1"
-            android:fontFamily="@font/franklin_gothic_book_regular"
+             android:fontFamily="@font/open_sans_regular"
             android:maxLines="3"
             android:text="This is where your generated text will appear. First choose if you’d like to create words, sentences, or paragraphs. Next, enter the quantity you need. Finally, click the ‘Generate Text’ button above, and "
             android:textColor="@color/black" />
@@ -138,7 +142,8 @@
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
             android:layout_weight="1"
-            android:fontFamily="@font/franklin_gothic_book_regular"
+             android:fontFamily="@font/open_sans_semibold"
+            android:layout_marginTop="5dp"
             android:text="View all 323 comments"
             android:textColor="@color/dark_grey" />
 

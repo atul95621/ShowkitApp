@@ -19,7 +19,7 @@ class SplashActivity : AppCompatActivity() {
         );
 
         Handler().postDelayed(Runnable { // This method will be executed once the timer is over
-            val i = Intent(this@SplashActivity, Login::class.java)
+            val i = Intent(this@SplashActivity, LoginActivity::class.java)
             startActivity(i)
             finish()
         }, 2000)

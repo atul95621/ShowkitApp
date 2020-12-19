@@ -73,7 +73,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/franklin_gothic_book_regular"
+                             android:fontFamily="@font/open_sans_regular"
                             android:text="Add a comment..."
                             android:textColor="@color/dark_grey"
                             android:textSize="20dp" />
@@ -99,7 +99,7 @@
                 android:layout_height="70dp"
                 android:layout_weight=".8"
                 android:background="@drawable/circle_pink"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                 android:fontFamily="@font/open_sans_regular"
                 android:gravity="center"
                 android:src="@drawable/ic_return_pic"
                 android:text="K"
@@ -131,7 +131,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
 
-                            android:fontFamily="@font/franklin_gothic_book_regular"
+                             android:fontFamily="@font/open_sans_regular"
                             android:text="Kunal Sharma . 2 hours ago"
                             android:textColor="@color/dark_grey" />
 
@@ -155,7 +155,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                    android:fontFamily="@font/franklin_gothic_medium"
+                                     android:fontFamily="@font/open_sans_regular"
                                     android:text="25"
                                     android:textColor="@color/grey_color"
                                     android:textSize="18sp" />
@@ -176,7 +176,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                    android:fontFamily="@font/franklin_gothic_medium"
+                                     android:fontFamily="@font/open_sans_regular"
                                     android:text="25"
                                     android:textColor="@color/grey_color"
                                     android:textSize="18sp" />
@@ -187,7 +187,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="30dp"
-                                android:fontFamily="@font/franklin_gothic_book_regular"
+                                 android:fontFamily="@font/open_sans_regular"
                                 android:text="Reply"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="16sp" />
@@ -234,7 +234,7 @@
                 android:layout_height="70dp"
                 android:layout_weight=".8"
                 android:background="@drawable/circle_pink"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                 android:fontFamily="@font/open_sans_regular"
                 android:gravity="center"
                 android:src="@drawable/ic_return_pic"
                 android:text="K"
@@ -266,7 +266,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
 
-                            android:fontFamily="@font/franklin_gothic_book_regular"
+                             android:fontFamily="@font/open_sans_regular"
                             android:text="Kunal Sharma . 2 hours ago"
                             android:textColor="@color/dark_grey" />
 
@@ -290,7 +290,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                    android:fontFamily="@font/franklin_gothic_medium"
+                                     android:fontFamily="@font/open_sans_regular"
                                     android:text="25"
                                     android:textColor="@color/grey_color"
                                     android:textSize="18sp" />
@@ -311,7 +311,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                    android:fontFamily="@font/franklin_gothic_medium"
+                                     android:fontFamily="@font/open_sans_regular"
                                     android:text="25"
                                     android:textColor="@color/grey_color"
                                     android:textSize="18sp" />
@@ -321,7 +321,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="30dp"
-                                android:fontFamily="@font/franklin_gothic_book_regular"
+                                 android:fontFamily="@font/open_sans_regular"
                                 android:text="Reply"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="16sp" />
@@ -367,7 +367,7 @@
                 android:layout_height="70dp"
                 android:layout_weight=".8"
                 android:background="@drawable/circle_pink"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                 android:fontFamily="@font/open_sans_regular"
                 android:gravity="center"
                 android:src="@drawable/ic_return_pic"
                 android:text="K"
@@ -399,7 +399,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
 
-                            android:fontFamily="@font/franklin_gothic_book_regular"
+                             android:fontFamily="@font/open_sans_regular"
                             android:text="Kunal Sharma . 2 hours ago"
                             android:textColor="@color/dark_grey" />
 
@@ -423,7 +423,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                    android:fontFamily="@font/franklin_gothic_medium"
+                                     android:fontFamily="@font/open_sans_regular"
                                     android:text="25"
                                     android:textColor="@color/grey_color"
                                     android:textSize="18sp" />
@@ -444,7 +444,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                    android:fontFamily="@font/franklin_gothic_medium"
+                                     android:fontFamily="@font/open_sans_regular"
                                     android:text="25"
                                     android:textColor="@color/grey_color"
                                     android:textSize="18sp" />
@@ -454,7 +454,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="30dp"
-                                android:fontFamily="@font/franklin_gothic_book_regular"
+                                 android:fontFamily="@font/open_sans_regular"
                                 android:text="Reply"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="16sp" />
@@ -500,7 +500,7 @@
                 android:layout_height="70dp"
                 android:layout_weight=".8"
                 android:background="@drawable/circle_pink"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                 android:fontFamily="@font/open_sans_regular"
                 android:gravity="center"
                 android:src="@drawable/ic_return_pic"
                 android:text="K"
@@ -532,7 +532,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
 
-                            android:fontFamily="@font/franklin_gothic_book_regular"
+                             android:fontFamily="@font/open_sans_regular"
                             android:text="Kunal Sharma . 2 hours ago"
                             android:textColor="@color/dark_grey" />
 
@@ -556,7 +556,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                    android:fontFamily="@font/franklin_gothic_medium"
+                                     android:fontFamily="@font/open_sans_regular"
                                     android:text="25"
                                     android:textColor="@color/grey_color"
                                     android:textSize="18sp" />
@@ -577,7 +577,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                    android:fontFamily="@font/franklin_gothic_medium"
+                                     android:fontFamily="@font/open_sans_regular"
                                     android:text="25"
                                     android:textColor="@color/grey_color"
                                     android:textSize="18sp" />
@@ -587,7 +587,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="30dp"
-                                android:fontFamily="@font/franklin_gothic_book_regular"
+                                 android:fontFamily="@font/open_sans_regular"
                                 android:text="Reply"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="16sp" />
@@ -633,7 +633,7 @@
                 android:layout_height="70dp"
                 android:layout_weight=".8"
                 android:background="@drawable/circle_pink"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                 android:fontFamily="@font/open_sans_regular"
                 android:gravity="center"
                 android:src="@drawable/ic_return_pic"
                 android:text="K"
@@ -665,7 +665,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
 
-                            android:fontFamily="@font/franklin_gothic_book_regular"
+                             android:fontFamily="@font/open_sans_regular"
                             android:text="Kunal Sharma . 2 hours ago"
                             android:textColor="@color/dark_grey" />
 
@@ -689,7 +689,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                    android:fontFamily="@font/franklin_gothic_medium"
+                                     android:fontFamily="@font/open_sans_regular"
                                     android:text="25"
                                     android:textColor="@color/grey_color"
                                     android:textSize="18sp" />
@@ -710,7 +710,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                    android:fontFamily="@font/franklin_gothic_medium"
+                                     android:fontFamily="@font/open_sans_regular"
                                     android:text="25"
                                     android:textColor="@color/grey_color"
                                     android:textSize="18sp" />
@@ -720,7 +720,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="30dp"
-                                android:fontFamily="@font/franklin_gothic_book_regular"
+                                 android:fontFamily="@font/open_sans_regular"
                                 android:text="Reply"
                                 android:textColor="@color/dark_grey"
                                 android:textSize="16sp" />

@@ -7,12 +7,18 @@ import android.os.Bundle
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
+import android.view.WindowManager
 import kotlinx.android.synthetic.main.activity_verify_otp.*
 
 class VerifyOtpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_verify_otp)
+
+        getWindow().setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        );
 
         var text = "Please enter your registered number +91-2345434589"
 
@@ -28,7 +34,7 @@ class VerifyOtpActivity : AppCompatActivity() {
 
         val spannab = SpannableString(textA)
         spannab.setSpan(
-            ForegroundColorSpan(resources.getColor(R.color.red)),
+            ForegroundColorSpan(resources.getColor(R.color.marron_full)),
             20, 31,
             Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
         )

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".Login">
+    tools:context=".LoginActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,17 +25,22 @@
                 android:layout_gravity="end"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_return" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="20dp"
-                android:layout_gravity="center|top"
-                android:letterSpacing=".2"
-                android:fontFamily="@font/franklin_gothic_bold"
-                android:text="Welcome Back"
+                android:fontFamily="@font/open_sans_semibold"
+                android:shadowColor="@color/white"
+                android:shadowDx="8"
+                android:shadowDy="8"
+                android:shadowRadius="2"
+                android:text="Welcome Back!"
+                android:textAllCaps="false"
                 android:textColor="@color/dark_grey"
-                android:textSize="18sp" />
+                android:textSize="30sp" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -72,25 +77,25 @@
                     android:layout_marginTop="30dp"
                     android:background="@drawable/blue_curve"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    >
+                    android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/tvLoginAs"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@null"
-                        android:fontFamily="@font/franklin_gothic_book_regular"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:padding="10dp"
                         android:text="Login as Jenny"
                         android:textColor="@color/black"
-                        android:padding="10dp"
                         android:textSize="18sp" />
+
                     <ImageView
-                        android:layout_marginTop="2dp"
-                        android:layout_gravity="center"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_arrow_go"/>
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/ic_arrow_go" />
 
                 </LinearLayout>
 
@@ -99,13 +104,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/franklin_gothic_bold"
+                    android:fontFamily="@font/open_sans_semibold"
                     android:text="Change Account?"
                     android:textColor="@color/dark_grey"
                     android:textSize="14sp" />
             </LinearLayout>
-
-
 
 
         </FrameLayout>

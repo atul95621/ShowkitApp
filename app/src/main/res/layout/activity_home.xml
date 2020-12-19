@@ -40,7 +40,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
-                        android:fontFamily="@font/franklin_gothic_medium"
+                         android:fontFamily="@font/open_sans_regular"
                         android:text="Title"
                         android:textColor="@color/black"
                         android:textSize="22sp" />
@@ -162,7 +162,7 @@
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/ic_person" />
+                        android:src="@drawable/profile" />
 
                     <TextView
                         android:layout_width="wrap_content"

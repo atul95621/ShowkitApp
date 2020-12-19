@@ -64,7 +64,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:fontFamily="@font/franklin_gothic_bold"
+                    android:fontFamily="@font/open_sans_semibold"
                     android:text="Janny Desuja"
                     android:textColor="@color/blue_pg"
                     android:textSize="18sp" />
@@ -218,7 +218,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:background="@drawable/orange_curve"
-                        android:fontFamily="@font/franklin_gothic_book_regular"
+                         android:fontFamily="@font/open_sans_regular"
                         android:gravity="center"
                         android:minWidth="100dp"
                         android:padding="3dp"
@@ -251,7 +251,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/franklin_gothic_book_regular"
+                             android:fontFamily="@font/open_sans_regular"
                             android:gravity="center"
                             android:text="Edit Profile"
                             android:textColor="@color/white"
@@ -270,7 +270,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
-            android:fontFamily="@font/franklin_gothic_book_regular"
+             android:fontFamily="@font/open_sans_regular"
             android:text="Bio"
             android:textColor="@color/colorPrimary"
             android:textSize="16sp" />
@@ -281,7 +281,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
             android:layout_marginRight="20dp"
-            android:fontFamily="@font/franklin_gothic_book_regular"
+             android:fontFamily="@font/open_sans_regular"
             android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
             android:textColor="@color/black"
             android:textSize="14sp" />
@@ -477,7 +477,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                    android:fontFamily="@font/franklin_gothic_book_regular"
+                                     android:fontFamily="@font/open_sans_regular"
                                     android:text="1.6 k"
                                     android:textColor="@color/white" />
                             </LinearLayout>
@@ -528,7 +528,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                    android:fontFamily="@font/franklin_gothic_book_regular"
+                                     android:fontFamily="@font/open_sans_regular"
                                     android:text="1.6 k"
                                     android:textColor="@color/white" />
                             </LinearLayout>
@@ -581,7 +581,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                    android:fontFamily="@font/franklin_gothic_book_regular"
+                                     android:fontFamily="@font/open_sans_regular"
                                     android:text="1.6 k"
                                     android:textColor="@color/white" />
                             </LinearLayout>
@@ -649,7 +649,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                    android:fontFamily="@font/franklin_gothic_book_regular"
+                                     android:fontFamily="@font/open_sans_regular"
                                     android:text="1.6 k"
                                     android:textColor="@color/white" />
                             </LinearLayout>
@@ -700,7 +700,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                    android:fontFamily="@font/franklin_gothic_book_regular"
+                                     android:fontFamily="@font/open_sans_regular"
                                     android:text="1.6 k"
                                     android:textColor="@color/white" />
                             </LinearLayout>
@@ -753,7 +753,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                    android:fontFamily="@font/franklin_gothic_book_regular"
+                                     android:fontFamily="@font/open_sans_regular"
                                     android:text="1.6 k"
                                     android:textColor="@color/white" />
                             </LinearLayout>
@@ -821,7 +821,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                    android:fontFamily="@font/franklin_gothic_book_regular"
+                                     android:fontFamily="@font/open_sans_regular"
                                     android:text="1.6 k"
                                     android:textColor="@color/white" />
                             </LinearLayout>
@@ -872,7 +872,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                    android:fontFamily="@font/franklin_gothic_book_regular"
+                                     android:fontFamily="@font/open_sans_regular"
                                     android:text="1.6 k"
                                     android:textColor="@color/white" />
                             </LinearLayout>
@@ -925,7 +925,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                    android:fontFamily="@font/franklin_gothic_book_regular"
+                                     android:fontFamily="@font/open_sans_regular"
                                     android:text="1.6 k"
                                     android:textColor="@color/white" />
                             </LinearLayout>

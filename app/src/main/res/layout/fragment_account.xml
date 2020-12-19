@@ -6,6 +6,7 @@
     tools:context=".fargment.NotificationsFragment">
 
     <LinearLayout
+         android:padding="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -14,11 +15,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+
             android:layout_marginTop="10dp"
             android:layout_weight="1"
-            android:fontFamily="@font/franklin_gothic_book_regular"
-            android:padding="10dp"
+            android:fontFamily="@font/open_sans_regular"
+            android:padding="15dp"
             android:text="Prersonal Information"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -26,10 +27,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
             android:layout_weight="1"
-            android:fontFamily="@font/franklin_gothic_book_regular"
-            android:padding="10dp"
+            android:fontFamily="@font/open_sans_regular"
+             android:padding="15dp"
             android:text="Your Activity"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -37,10 +37,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+
             android:layout_weight="1"
-            android:fontFamily="@font/franklin_gothic_book_regular"
-            android:padding="10dp"
+            android:fontFamily="@font/open_sans_regular"
+             android:padding="15dp"
             android:text="Saved"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -48,10 +48,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+
             android:layout_weight="1"
-            android:fontFamily="@font/franklin_gothic_book_regular"
-            android:padding="10dp"
+            android:fontFamily="@font/open_sans_regular"
+             android:padding="15dp"
             android:text="Language"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -59,10 +59,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+
             android:layout_weight="1"
-            android:fontFamily="@font/franklin_gothic_book_regular"
-            android:padding="10dp"
+            android:fontFamily="@font/open_sans_regular"
+             android:padding="15dp"
             android:text="Contact Syncing"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -70,10 +70,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+
             android:layout_weight="1"
-            android:fontFamily="@font/franklin_gothic_book_regular"
-            android:padding="10dp"
+            android:fontFamily="@font/open_sans_regular"
+             android:padding="15dp"
             android:text="Request Verification"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -81,10 +81,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+
             android:layout_weight="1"
-            android:fontFamily="@font/franklin_gothic_book_regular"
-            android:padding="10dp"
+            android:fontFamily="@font/open_sans_regular"
+             android:padding="15dp"
             android:text="Posts you've liked"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -92,10 +92,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+
             android:layout_weight="1"
-            android:fontFamily="@font/franklin_gothic_bold"
-            android:padding="10dp"
+            android:fontFamily="@font/open_sans_semibold"
+             android:padding="15dp"
             android:text="Switch to Business Account"
             android:textColor="@color/blue_pg"
             android:textSize="18sp" />
@@ -103,10 +103,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+
             android:layout_weight="1"
-            android:fontFamily="@font/franklin_gothic_bold"
-            android:padding="10dp"
+            android:fontFamily="@font/open_sans_semibold"
+             android:padding="15dp"
             android:text="Switch to Creator Account"
             android:textColor="@color/blue_pg"
             android:textSize="18sp" />

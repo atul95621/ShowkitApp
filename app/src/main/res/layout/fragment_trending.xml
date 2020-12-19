@@ -121,7 +121,7 @@
     <!--            android:layout_gravity="center"-->
     <!--            android:layout_marginStart="10dp"-->
     <!--            android:layout_weight="1"-->
-    <!--            android:fontFamily="@font/franklin_gothic_book_regular"-->
+    <!--             android:fontFamily="@font/open_sans_regular"-->
     <!--            android:text="1,233 likes"-->
     <!--            android:textColor="@color/black" />-->
 
@@ -131,7 +131,7 @@
     <!--            android:layout_gravity="center"-->
     <!--            android:layout_marginStart="10dp"-->
     <!--            android:layout_weight="1"-->
-    <!--            android:fontFamily="@font/franklin_gothic_book_regular"-->
+    <!--             android:fontFamily="@font/open_sans_regular"-->
     <!--            android:maxLines="3"-->
     <!--            android:text="This is where your generated text will appear. First choose if you’d like to create words, sentences, or paragraphs. Next, enter the quantity you need. Finally, click the ‘Generate Text’ button above, and "-->
     <!--            android:textColor="@color/black" />-->
@@ -142,7 +142,7 @@
     <!--            android:layout_gravity="center"-->
     <!--            android:layout_marginStart="10dp"-->
     <!--            android:layout_weight="1"-->
-    <!--            android:fontFamily="@font/franklin_gothic_book_regular"-->
+    <!--             android:fontFamily="@font/open_sans_regular"-->
     <!--            android:text="View all 323 comments"-->
     <!--            android:textColor="@color/dark_grey" />-->
 

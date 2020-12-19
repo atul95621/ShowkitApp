@@ -50,7 +50,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                 android:fontFamily="@font/open_sans_regular"
                 android:text="3.5k"
                 android:textColor="@color/white" />
         </LinearLayout>
@@ -71,7 +71,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                 android:fontFamily="@font/open_sans_regular"
                 android:text="3.5k"
                 android:textColor="@color/white" />
         </LinearLayout>
@@ -92,7 +92,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                 android:fontFamily="@font/open_sans_regular"
                 android:text="3.5k"
                 android:textColor="@color/white" />
         </LinearLayout>
@@ -127,7 +127,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/franklin_gothic_medium"
+             android:fontFamily="@font/open_sans_regular"
             android:text="@string/pankakjazz"
             android:textColor="@color/white" />
 
@@ -135,7 +135,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:fontFamily="@font/franklin_gothic_medium"
+             android:fontFamily="@font/open_sans_regular"
             android:maxWidth="300dp"
             android:text="It is a long established fact that a reader will be distracted by the readable content of a page"
             android:textColor="@color/white" />
@@ -144,7 +144,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:fontFamily="@font/franklin_gothic_medium"
+             android:fontFamily="@font/open_sans_regular"
             android:maxWidth="300dp"
             android:text="Lorem Ipsum is simply dummy text of the
         printing and typesetting industry. Lorem"

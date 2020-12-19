@@ -46,8 +46,7 @@
     <color name="orange">#F4A755</color>
     <color name="blackr">#000000</color>
     <color name="grey_clr">#D4D3D3</color>
-
-
+    <color name="background_grey">#E8E4E4</color>
 
 
 </resources>

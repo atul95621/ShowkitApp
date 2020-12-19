@@ -8,7 +8,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="10dp">
 
 
         <LinearLayout
@@ -18,13 +19,18 @@
             android:layout_marginTop="10dp"
             android:padding="10dp">
 
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_followw" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                android:fontFamily="@font/open_sans_regular"
                 android:text="Follow Contacts"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -38,13 +44,18 @@
             android:layout_gravity="center"
             android:padding="10dp">
 
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_email" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                android:fontFamily="@font/open_sans_regular"
                 android:text="Invite friends by email"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -58,13 +69,18 @@
             android:layout_gravity="center"
             android:padding="10dp">
 
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_coomm" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                android:fontFamily="@font/open_sans_regular"
                 android:text="Invite friends via SMS"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -78,13 +94,18 @@
             android:layout_gravity="center"
             android:padding="10dp">
 
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_shareee" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/franklin_gothic_book_regular"
+                android:fontFamily="@font/open_sans_regular"
                 android:text="Invite friends via..."
                 android:textColor="@color/black"
                 android:textSize="18sp" />

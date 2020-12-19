@@ -42,7 +42,7 @@
             android:layout_width="40dp"
             android:layout_height="20dp"
             app:layout_constraintEnd_toStartOf="@+id/textView"
-            app:srcCompat="@drawable/ic_flag"
+            app:srcCompat="@drawable/ic_india"
             tools:layout_editor_absoluteY="646dp" />
 
         <TextView
@@ -50,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:fontFamily="@font/franklin_gothic_bold"
+            android:fontFamily="@font/open_sans_semibold"
             android:text="MADE IN INDIA"
             android:textColor="@color/white"
             android:textSize="16sp"

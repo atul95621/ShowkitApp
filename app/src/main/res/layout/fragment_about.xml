@@ -17,8 +17,8 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
-            android:fontFamily="@font/franklin_gothic_book_regular"
-            android:padding="10dp"
+             android:fontFamily="@font/open_sans_regular"
+             android:padding="15dp"
             android:text="App updates"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -28,8 +28,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_weight="1"
-            android:fontFamily="@font/franklin_gothic_book_regular"
-            android:padding="10dp"
+             android:fontFamily="@font/open_sans_regular"
+             android:padding="15dp"
             android:text="Privacy policy"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -39,8 +39,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_weight="1"
-            android:fontFamily="@font/franklin_gothic_book_regular"
-            android:padding="10dp"
+             android:fontFamily="@font/open_sans_regular"
+             android:padding="15dp"
             android:text="@string/terms_conditions"
             android:textColor="@color/black"
             android:textSize="18sp" />

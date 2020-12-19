@@ -23,7 +23,7 @@
         </activity>
         <activity android:name=".PasswrdReturningActivity" />
         <activity android:name=".GenderBirthActivity" />
-        <activity android:name=".Login" />
+        <activity android:name=".LoginActivity" />
         <activity android:name=".ContinueMobActivity" />
         <activity android:name=".EnterPasscodeActivity" />
         <activity android:name=".ForgotPassword" />
