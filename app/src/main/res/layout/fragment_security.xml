@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/open_sans_semibold"
+         android:fontFamily="@font/montserrat_semi_bold"
 
         android:text="Login Security"
         android:textColor="@color/black"
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
-            android:fontFamily="@font/open_sans_regular"
+            android:fontFamily="@font/montserrat_regular"
 
             android:text="Password"
             android:textColor="@color/black"
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="20dp"
-            android:fontFamily="@font/open_sans_regular"
+            android:fontFamily="@font/montserrat_regular"
             android:text="Passcode"
 
             android:textColor="@color/black"
@@ -81,7 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="20dp"
-            android:fontFamily="@font/open_sans_regular"
+            android:fontFamily="@font/montserrat_regular"
             android:text="Logiin Activity"
 
             android:textColor="@color/black"

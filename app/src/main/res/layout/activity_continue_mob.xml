@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".activity.LoginActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -58,7 +58,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="15dp"
-                        android:fontFamily="@font/open_sans_semibold"
+                        android:fontFamily="@font/montserrat_bold"
                         android:gravity="center"
                         android:text="Sign up to keep making amazing video !"
                         android:textColor="@color/black"
@@ -69,11 +69,11 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
-                         android:fontFamily="@font/open_sans_regular"
+                        android:fontFamily="@font/montserrat_regular"
                         android:gravity="center"
                         android:text="Add your phone number. We will send you a verification code so we know you're real."
                         android:textColor="@color/dark_grey"
-                        android:textSize="16dp" />
+                        android:textSize="14dp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -88,9 +88,10 @@
                         android:padding="10dp">
 
                         <com.hbb20.CountryCodePicker
+                            android:id="@+id/ccp"
                             android:layout_width="50dp"
                             android:layout_height="35dp"
-                            app:ccpDialog_allowSearch="false"
+                            app:ccpDialog_allowSearch="true"
                             app:ccpDialog_backgroundColor="@color/white"
                             app:ccpDialog_fastScroller_bubbleColor="@color/white"
                             app:ccpDialog_fastScroller_handleColor="@color/white"
@@ -111,7 +112,6 @@
                             app:ccp_clickable="true"
                             app:ccp_contentColor="@color/white"
                             app:ccp_countryAutoDetectionPref="SIM_ONLY"
-                            app:ccp_flagBorderColor="@color/black"
                             app:ccp_hintExampleNumber="true"
                             app:ccp_rememberLastSelection="true"
                             app:ccp_selectionMemoryTag="signupCCP"
@@ -137,21 +137,37 @@
                             android:background="#6E6B6B" />
 
                         <EditText
-                            android:layout_width="0dp"
-                            android:layout_height="25dp"
-                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:background="@null"
+                            android:clickable="false"
+                            android:fontFamily="@font/montserrat_regular"
                             android:lines="1"
                             android:maxLines="1"
+
                             android:singleLine="true"
-                            android:text="+91 67898678900" />
+                            android:text="+91 " />
+
+                        <EditText
+                            android:id="@+id/edtMobileNumber"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:maxLength="10"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="8219117720" />
 
                         <ImageView
-                            android:layout_width="15dp"
-                            android:layout_height="15dp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
                             android:layout_gravity="center"
                             android:layout_marginEnd="5dp"
-                             android:fontFamily="@font/open_sans_regular"
+                            android:fontFamily="@font/montserrat_regular"
                             android:rotation="45"
                             android:src="@drawable/ic_baseline_add_circle_24" />
                     </LinearLayout>
@@ -164,19 +180,19 @@
                         android:layout_marginTop="20dp"
                         android:layout_marginEnd="15dp"
                         android:background="@drawable/blue_grad"
-                         android:fontFamily="@font/open_sans_regular"
+                        android:fontFamily="@font/montserrat_regular"
                         android:gravity="center"
                         android:padding="10dp"
                         android:text="Continue"
                         android:textColor="@color/white"
-                        android:textSize="20dp" />
+                        android:textSize="18dp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
-                        android:gravity="bottom"
                         android:layout_marginTop="20dp"
+                        android:gravity="bottom"
                         android:orientation="vertical"
                         android:paddingBottom="15dp">
 
@@ -195,9 +211,10 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
-                                 android:fontFamily="@font/open_sans_regular"
+                                android:fontFamily="@font/montserrat_semi_bold"
                                 android:text="We are not storing any private information"
-                                android:textSize="16sp"
+                                android:textColor="@color/dark_grey"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
 
@@ -207,7 +224,7 @@
                             android:layout_gravity="center"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="5dp"
-                             android:fontFamily="@font/open_sans_regular"
+                            android:fontFamily="@font/montserrat_regular"
                             android:gravity="center"
                             android:text="By continue you aggree to pur Terms and conditon and Privacy Policy"
                             android:textSize="12sp" />

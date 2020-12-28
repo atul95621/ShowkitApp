@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".activity.LoginActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -32,14 +32,14 @@
                 android:layout_gravity="center|top"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/open_sans_semibold"
+                 android:fontFamily="@font/montserrat_bold"
                 android:shadowColor="@color/white"
                 android:shadowDx="8"
                 android:shadowDy="8"
                 android:shadowRadius="2"
                 android:text="Welcome Back!"
                 android:textAllCaps="false"
-                android:textColor="@color/dark_grey"
+                android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <ImageView
@@ -47,8 +47,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginBottom="50dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ic_dots" />
+                android:src="@drawable/dotted" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -84,7 +83,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@null"
-                        android:fontFamily="@font/open_sans_regular"
+                        android:fontFamily="@font/montserrat_semi_bold"
                         android:padding="10dp"
                         android:text="Login as Jenny"
                         android:textColor="@color/black"
@@ -104,7 +103,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/open_sans_semibold"
+                     android:fontFamily="@font/montserrat_semi_bold"
                     android:text="Change Account?"
                     android:textColor="@color/dark_grey"
                     android:textSize="14sp" />

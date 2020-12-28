@@ -1,21 +1,21 @@
-package com.kit.showkitapp
+package com.kit.showkitapp.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
-import kotlinx.android.synthetic.main.activity_continue_mob.*
-import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_login.linOtp
+import com.kit.showkitapp.R
+import kotlinx.android.synthetic.main.activity_otp_screen.*
 
-class ContinueMobActivity : AppCompatActivity() {
+class OtpScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_continue_mob)
+        setContentView(R.layout.activity_otp_screen)
 
-        tvCont.setOnClickListener()
+
+        tvContinue.setOnClickListener()
         {
-            var intent = Intent(this, VerifyOtpActivity::class.java)
+            var intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
 

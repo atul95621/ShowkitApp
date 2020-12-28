@@ -30,7 +30,7 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/open_sans_regular"
+                android:fontFamily="@font/montserrat_regular"
                 android:text="Follow Contacts"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -55,7 +55,7 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/open_sans_regular"
+                android:fontFamily="@font/montserrat_regular"
                 android:text="Invite friends by email"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -80,7 +80,7 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/open_sans_regular"
+                android:fontFamily="@font/montserrat_regular"
                 android:text="Invite friends via SMS"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -105,7 +105,7 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/open_sans_regular"
+                android:fontFamily="@font/montserrat_regular"
                 android:text="Invite friends via..."
                 android:textColor="@color/black"
                 android:textSize="18sp" />

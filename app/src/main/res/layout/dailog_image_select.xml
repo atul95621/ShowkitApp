@@ -29,7 +29,7 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_return_pic"
+                android:src="@drawable/care"
                 app:civ_border_color="@color/white"
                 app:civ_border_width="2dp" />
 
@@ -37,9 +37,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                 android:fontFamily="@font/open_sans_regular"
+                android:fontFamily="@font/montserrat_semi_bold"
                 android:gravity="center"
-                android:text="Neha"
+                android:text="Personal Care"
+                android:textColor="@color/black"
                 android:textSize="14sp" />
         </LinearLayout>
 
@@ -54,7 +55,7 @@
                 android:layout_height="70dp"
 
                 android:layout_gravity="center"
-                android:src="@drawable/ic_return_pic"
+                android:src="@drawable/movie"
                 app:civ_border_color="@color/white"
                 app:civ_border_width="2dp" />
 
@@ -62,9 +63,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                 android:fontFamily="@font/open_sans_regular"
+                android:fontFamily="@font/montserrat_semi_bold"
                 android:gravity="center"
-                android:text="Neha"
+                android:text="@string/movies_tv"
+                android:textColor="@color/black"
                 android:textSize="14sp" />
         </LinearLayout>
 
@@ -79,7 +81,7 @@
                 android:layout_height="70dp"
 
                 android:layout_gravity="center"
-                android:src="@drawable/ic_return_pic"
+                android:src="@drawable/travel"
                 app:civ_border_color="@color/white"
                 app:civ_border_width="2dp" />
 
@@ -87,9 +89,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                 android:fontFamily="@font/open_sans_regular"
+                android:fontFamily="@font/montserrat_semi_bold"
                 android:gravity="center"
-                android:text="Neha"
+                android:text="Travel"
+                android:textColor="@color/black"
                 android:textSize="14sp" />
         </LinearLayout>
 
@@ -116,7 +119,7 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_return_pic"
+                android:src="@drawable/beauty"
                 app:civ_border_color="@color/white"
                 app:civ_border_width="2dp" />
 
@@ -124,9 +127,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                 android:fontFamily="@font/open_sans_regular"
+                android:fontFamily="@font/montserrat_semi_bold"
                 android:gravity="center"
-                android:text="Neha"
+                android:text="Beauty"
+                android:textColor="@color/black"
                 android:textSize="14sp" />
         </LinearLayout>
 
@@ -141,7 +145,7 @@
                 android:layout_height="70dp"
 
                 android:layout_gravity="center"
-                android:src="@drawable/ic_return_pic"
+                android:src="@drawable/food"
                 app:civ_border_color="@color/white"
                 app:civ_border_width="2dp" />
 
@@ -149,9 +153,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                 android:fontFamily="@font/open_sans_regular"
+                android:fontFamily="@font/montserrat_semi_bold"
                 android:gravity="center"
-                android:text="Neha"
+                android:text="Food recipe"
+                android:textColor="@color/black"
                 android:textSize="14sp" />
         </LinearLayout>
 
@@ -166,7 +171,7 @@
                 android:layout_height="70dp"
 
                 android:layout_gravity="center"
-                android:src="@drawable/ic_return_pic"
+                android:src="@drawable/fashion"
                 app:civ_border_color="@color/white"
                 app:civ_border_width="2dp" />
 
@@ -174,9 +179,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                 android:fontFamily="@font/open_sans_regular"
+                android:fontFamily="@font/montserrat_semi_bold"
                 android:gravity="center"
-                android:text="Neha"
+                android:text="Fashion"
+                android:textColor="@color/black"
                 android:textSize="14sp" />
         </LinearLayout>
 
@@ -187,10 +193,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/open_sans_semibold"
+        android:fontFamily="@font/montserrat_bold"
         android:text="Choose your interest "
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -216,7 +222,7 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_return_pic"
+                android:src="@drawable/comedy"
                 app:civ_border_color="@color/white"
                 app:civ_border_width="2dp" />
 
@@ -224,9 +230,49 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                 android:fontFamily="@font/open_sans_regular"
+                android:fontFamily="@font/montserrat_semi_bold"
                 android:gravity="center"
-                android:text="Neha"
+                android:text="Comedy"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+
+                    android:layout_gravity="center"
+                    android:src="@drawable/science4"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/check" />
+            </FrameLayout>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:gravity="center"
+                android:text="Science"
+                android:textColor="@color/black"
                 android:textSize="14sp" />
         </LinearLayout>
 
@@ -236,47 +282,34 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-                android:layout_gravity="center"
-                android:src="@drawable/ic_return_pic"
-                app:civ_border_color="@color/white"
-                app:civ_border_width="2dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/business"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/check" />
+            </FrameLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                 android:fontFamily="@font/open_sans_regular"
+                android:fontFamily="@font/montserrat_semi_bold"
                 android:gravity="center"
-                android:text="Neha"
-                android:textSize="14sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-
-                android:layout_gravity="center"
-                android:src="@drawable/ic_return_pic"
-                app:civ_border_color="@color/white"
-                app:civ_border_width="2dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                 android:fontFamily="@font/open_sans_regular"
-                android:gravity="center"
-                android:text="Neha"
+                android:text="Businesses"
+                android:textColor="@color/black"
                 android:textSize="14sp" />
         </LinearLayout>
 
@@ -286,9 +319,9 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
-        android:minWidth="150dp"
         android:layout_marginTop="25dp"
         android:background="@drawable/blue_grad"
+        android:minWidth="150dp"
         android:text="Save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

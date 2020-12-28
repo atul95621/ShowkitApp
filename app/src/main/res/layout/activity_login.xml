@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".activity.LoginActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -30,40 +30,47 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="100dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                    android:layout_weight="1">
 
-                    <ImageView
-                        android:layout_width="250dp"
-                        android:layout_height="250dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/ic_slicee" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:fontFamily="@font/open_sans_regular"
-                        android:text="Welcome to Showkit"
-                        android:textColor="@color/black"
-                        android:textSize="30dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:fontFamily="@font/open_sans_regular"
                         android:gravity="center"
-                        android:maxWidth="300dp"
-                        android:text="Now create funny interesting video and share it."
-                        android:textSize="18sp" />
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_slicee" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="Welcome to Showkt"
+                            android:textColor="@color/black"
+                            android:textSize="24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:gravity="center"
+                            android:maxWidth="300dp"
+                            android:text="Now create funny interesting video and share it."
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -71,10 +78,9 @@
                         android:layout_gravity="bottom"
                         android:rotation="90"
                         android:src="@drawable/ic_show_more_button_with_three_dots"
-                        android:visibility="gone" />
+                        android:visibility="visible" />
 
-
-                </LinearLayout>
+                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -94,7 +100,7 @@
                         android:layout_marginTop="20dp"
                         android:background="@drawable/white_rect_curve"
                         android:gravity="center"
-                        android:padding="15dp">
+                        android:padding="10dp">
 
                         <ImageView
                             android:layout_width="30dp"
@@ -107,11 +113,11 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginStart="15dp"
-                            android:fontFamily="@font/open_sans_semibold"
+                            android:fontFamily="@font/montserrat_semi_bold"
                             android:gravity="center"
                             android:text="Contine with Phone"
                             android:textColor="@color/black"
-                            android:textSize="20dp" />
+                            android:textSize="18dp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -132,7 +138,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
                             android:layout_marginEnd="10dp"
-                            android:fontFamily="@font/open_sans_semibold"
+                            android:fontFamily="@font/montserrat_semi_bold"
                             android:text="Or"
                             android:textColor="@color/black">
 
@@ -152,7 +158,7 @@
                         android:layout_marginTop="20dp"
                         android:background="@drawable/white_rect_curve"
                         android:gravity="center"
-                        android:padding="15dp">
+                        android:padding="10dp">
 
                         <ImageView
                             android:layout_width="30dp"
@@ -165,11 +171,11 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginStart="15dp"
-                            android:fontFamily="@font/open_sans_semibold"
+                            android:fontFamily="@font/montserrat_semi_bold"
                             android:gravity="center"
                             android:text="Contine with Google"
                             android:textColor="@color/black"
-                            android:textSize="20dp" />
+                            android:textSize="18dp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -198,9 +204,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
-                                android:fontFamily="@font/open_sans_regular"
+                                android:fontFamily="@font/montserrat_semi_bold"
                                 android:text="We are not storing any private information"
-                                android:textSize="16sp" />
+                                android:textSize="14sp" />
                         </LinearLayout>
 
                         <TextView
@@ -208,7 +214,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="5dp"
-                            android:fontFamily="@font/open_sans_regular"
+                            android:fontFamily="@font/montserrat_regular"
                             android:gravity="center"
                             android:text="By continue you agree to pur Terms and conditon and Privacy Policy"
                             android:textSize="12sp" />

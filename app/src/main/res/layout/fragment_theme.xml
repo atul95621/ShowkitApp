@@ -19,7 +19,7 @@
             android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:layout_weight="1"
-             android:fontFamily="@font/open_sans_regular"
+             android:fontFamily="@font/montserrat_regular"
 
             android:text="Light"
             android:textColor="@color/black"
@@ -42,7 +42,7 @@
             android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:layout_weight="1"
-             android:fontFamily="@font/open_sans_regular"
+             android:fontFamily="@font/montserrat_regular"
 
             android:text="Dark"
             android:textColor="@color/black"
@@ -65,7 +65,7 @@
             android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:layout_weight="1"
-             android:fontFamily="@font/open_sans_regular"
+             android:fontFamily="@font/montserrat_regular"
 
             android:text="System Default"
             android:textColor="@color/black"

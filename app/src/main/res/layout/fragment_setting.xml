@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
-             android:fontFamily="@font/open_sans_regular"
+             android:fontFamily="@font/montserrat_regular"
 
             android:text="Follow and invite friends"
             android:textColor="@color/black"
@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
-             android:fontFamily="@font/open_sans_regular"
+             android:fontFamily="@font/montserrat_regular"
             android:text="Notifications"
 
             android:textColor="@color/black"
@@ -77,7 +77,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
-             android:fontFamily="@font/open_sans_regular"
+             android:fontFamily="@font/montserrat_regular"
             android:text="Privacy"
 
             android:textColor="@color/black"
@@ -101,7 +101,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
-             android:fontFamily="@font/open_sans_regular"
+             android:fontFamily="@font/montserrat_regular"
             android:text="Security"
             android:textColor="@color/black"
 
@@ -125,7 +125,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
-             android:fontFamily="@font/open_sans_regular"
+             android:fontFamily="@font/montserrat_regular"
             android:text="Account"
 
             android:textColor="@color/black"
@@ -149,7 +149,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
-             android:fontFamily="@font/open_sans_regular"
+             android:fontFamily="@font/montserrat_regular"
             android:text="Help"
             android:textColor="@color/black"
 
@@ -173,7 +173,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
-             android:fontFamily="@font/open_sans_regular"
+             android:fontFamily="@font/montserrat_regular"
             android:text="About"
 
             android:textColor="@color/black"
@@ -197,7 +197,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
-             android:fontFamily="@font/open_sans_regular"
+             android:fontFamily="@font/montserrat_regular"
             android:text="Theme"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -214,7 +214,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
-            android:fontFamily="@font/open_sans_semibold"
+             android:fontFamily="@font/montserrat_semi_bold"
 
             android:text="Logout"
             android:textColor="@color/blue_pg"

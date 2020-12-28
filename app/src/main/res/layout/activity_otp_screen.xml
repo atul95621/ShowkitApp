@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/ic_otp_bg"
     android:orientation="vertical"
-    tools:context=".OtpScreen">
+    tools:context=".activity.OtpScreen">
 
     <LinearLayout
         android:gravity="center"
@@ -17,10 +17,10 @@
 
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_otp_slice" />
+            android:src="@drawable/top_pix" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -29,20 +29,20 @@
             android:layout_marginTop="30dp"
             android:text="Verify your number"
             android:textColor="@color/white"
-            android:textSize="28sp"
-            android:fontFamily="@font/open_sans_semibold"/>
+            android:textSize="22sp"
+             android:fontFamily="@font/montserrat_bold"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:gravity="center"
-             android:fontFamily="@font/open_sans_regular"
+             android:fontFamily="@font/montserrat_regular"
             android:maxWidth="300dp"
             android:text="Enter your OTP code here that we have to 456787654"
             android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -59,7 +59,7 @@
                 android:text="2"
                 android:textColor="@color/white"
                 android:textSize="28sp"
-                android:fontFamily="@font/open_sans_semibold"/>
+                 android:fontFamily="@font/montserrat_semi_bold"/>
 
             <TextView
                 android:layout_width="70dp"
@@ -70,7 +70,7 @@
                 android:text="3"
                 android:textColor="@color/white"
                 android:textSize="28sp"
-                android:fontFamily="@font/open_sans_semibold" />
+                 android:fontFamily="@font/montserrat_semi_bold" />
 
             <TextView
                 android:layout_width="70dp"
@@ -82,7 +82,7 @@
                 android:text="6"
                 android:textColor="@color/white"
                 android:textSize="28sp"
-                android:fontFamily="@font/open_sans_semibold"/>
+                 android:fontFamily="@font/montserrat_semi_bold"/>
 
             <TextView
                 android:layout_width="70dp"
@@ -93,7 +93,7 @@
                 android:text="8"
                 android:textColor="@color/white"
                 android:textSize="28sp"
-                android:fontFamily="@font/open_sans_semibold" />
+                 android:fontFamily="@font/montserrat_semi_bold" />
         </LinearLayout>
 
         <TextView
@@ -106,17 +106,17 @@
             android:background="@drawable/orange_graf"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Continue"   android:fontFamily="@font/open_sans_regular"
+            android:text="Continue"   android:fontFamily="@font/montserrat_regular"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"   android:fontFamily="@font/open_sans_regular"
+            android:layout_height="wrap_content"   android:fontFamily="@font/montserrat_regular"
             android:layout_marginTop="30dp"
             android:gravity="center"
             android:text="Resend OTP"
             android:textColor="@color/white"
-            android:textSize="18dp" />
+            android:textSize="16dp" />
     </LinearLayout>
 </ScrollView>

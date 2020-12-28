@@ -9,8 +9,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.Window
-import com.kit.showkitapp.HomeActivity
+import androidx.core.content.ContextCompat
+import com.kit.showkitapp.activity.HomeActivity
 import com.kit.showkitapp.R
+import kotlinx.android.synthetic.main.fragment_dashboard.*
 import kotlinx.android.synthetic.main.fragment_dashboard.view.*
 
 class DashboardFragment(var homeActivity: HomeActivity) : Fragment() {
@@ -32,24 +34,35 @@ class DashboardFragment(var homeActivity: HomeActivity) : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         openFragmentChild(TrendingFragment(homeActivity))
 
+        viewTrending.visibility = View.VISIBLE
 
         view.tvForYou.setOnClickListener()
         {
+            tvForYou.setTextColor(ContextCompat.getColor(homeActivity, R.color.black))
+            tvTrending.setTextColor(ContextCompat.getColor(homeActivity, R.color.dark_grey))
+            viewForYou.visibility = View.VISIBLE
+            viewTrending.visibility = View.GONE
             openFragmentChild(ForYouFragment(homeActivity))
         }
-        view.rvTrending.setOnClickListener()
+        view.tvTrending.setOnClickListener()
         {
+            tvTrending.setTextColor(ContextCompat.getColor(homeActivity, R.color.black))
+            tvForYou.setTextColor(ContextCompat.getColor(homeActivity, R.color.dark_grey))
+            viewForYou.visibility = View.GONE
+            viewTrending.visibility = View.VISIBLE
+
             openFragmentChild(TrendingFragment(homeActivity))
         }
 
-        view.imgNotify.setOnClickListener()
+        view.imgLang.setOnClickListener()
         {
             showLanguageDialog()
         }
 
-        view.imgSearch.setOnClickListener()
+        view.imgInterest.setOnClickListener()
         {
             showInterestDialog()
         }

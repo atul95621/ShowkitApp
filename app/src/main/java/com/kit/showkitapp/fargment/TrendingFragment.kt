@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.kit.showkitapp.HomeActivity
+import com.kit.showkitapp.activity.HomeActivity
 import com.kit.showkitapp.R
 import com.kit.showkitapp.adapter.TrendingAdapter
 import com.kit.showkitapp.model.TrendingModel

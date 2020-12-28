@@ -23,7 +23,7 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="20dp"
                 android:layout_weight="1"
-                 android:fontFamily="@font/open_sans_regular"
+                 android:fontFamily="@font/montserrat_regular"
                 android:text="Pause all notifications"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -47,7 +47,7 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="20dp"
                 android:layout_weight="1"
-                 android:fontFamily="@font/open_sans_regular"
+                 android:fontFamily="@font/montserrat_regular"
                 android:text="Posts, Stories and Comments"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -67,7 +67,7 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="20dp"
                 android:layout_weight="1"
-                 android:fontFamily="@font/open_sans_regular"
+                 android:fontFamily="@font/montserrat_regular"
                 android:text="Following and Followers"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -87,7 +87,7 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="20dp"
                 android:layout_weight="1"
-                 android:fontFamily="@font/open_sans_regular"
+                 android:fontFamily="@font/montserrat_regular"
                 android:text="Direct Message"
                 android:textColor="@color/black"
                 android:textSize="18sp" />

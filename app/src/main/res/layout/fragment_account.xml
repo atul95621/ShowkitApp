@@ -18,7 +18,7 @@
 
             android:layout_marginTop="10dp"
             android:layout_weight="1"
-            android:fontFamily="@font/open_sans_regular"
+            android:fontFamily="@font/montserrat_regular"
             android:padding="15dp"
             android:text="Prersonal Information"
             android:textColor="@color/black"
@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="@font/open_sans_regular"
+            android:fontFamily="@font/montserrat_regular"
              android:padding="15dp"
             android:text="Your Activity"
             android:textColor="@color/black"
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
 
             android:layout_weight="1"
-            android:fontFamily="@font/open_sans_regular"
+            android:fontFamily="@font/montserrat_regular"
              android:padding="15dp"
             android:text="Saved"
             android:textColor="@color/black"
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
 
             android:layout_weight="1"
-            android:fontFamily="@font/open_sans_regular"
+            android:fontFamily="@font/montserrat_regular"
              android:padding="15dp"
             android:text="Language"
             android:textColor="@color/black"
@@ -61,7 +61,7 @@
             android:layout_height="wrap_content"
 
             android:layout_weight="1"
-            android:fontFamily="@font/open_sans_regular"
+            android:fontFamily="@font/montserrat_regular"
              android:padding="15dp"
             android:text="Contact Syncing"
             android:textColor="@color/black"
@@ -72,7 +72,7 @@
             android:layout_height="wrap_content"
 
             android:layout_weight="1"
-            android:fontFamily="@font/open_sans_regular"
+            android:fontFamily="@font/montserrat_regular"
              android:padding="15dp"
             android:text="Request Verification"
             android:textColor="@color/black"
@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
 
             android:layout_weight="1"
-            android:fontFamily="@font/open_sans_regular"
+            android:fontFamily="@font/montserrat_regular"
              android:padding="15dp"
             android:text="Posts you've liked"
             android:textColor="@color/black"
@@ -94,7 +94,7 @@
             android:layout_height="wrap_content"
 
             android:layout_weight="1"
-            android:fontFamily="@font/open_sans_semibold"
+             android:fontFamily="@font/montserrat_semi_bold"
              android:padding="15dp"
             android:text="Switch to Business Account"
             android:textColor="@color/blue_pg"
@@ -105,7 +105,7 @@
             android:layout_height="wrap_content"
 
             android:layout_weight="1"
-            android:fontFamily="@font/open_sans_semibold"
+             android:fontFamily="@font/montserrat_semi_bold"
              android:padding="15dp"
             android:text="Switch to Creator Account"
             android:textColor="@color/blue_pg"

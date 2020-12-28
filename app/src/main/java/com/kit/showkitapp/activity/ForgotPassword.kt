@@ -1,4 +1,4 @@
-package com.kit.showkitapp
+package com.kit.showkitapp.activity
 
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,7 @@ import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
 import android.view.WindowManager
+import com.kit.showkitapp.R
 import kotlinx.android.synthetic.main.activity_forgot_password.*
 
 class ForgotPassword : AppCompatActivity() {

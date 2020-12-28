@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.PopupMenu
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.kit.showkitapp.HomeActivity
+import com.kit.showkitapp.activity.HomeActivity
 import com.kit.showkitapp.R
 import com.kit.showkitapp.fargment.TrendingFragment
 import com.kit.showkitapp.model.TrendingModel
@@ -17,7 +17,7 @@ import kotlinx.android.synthetic.main.item_layout_trending.view.*
 class TrendingAdapter(
     var arrayList: ArrayList<TrendingModel>,
     var homeActivity: HomeActivity,
-   var trendingFragment: TrendingFragment
+    var trendingFragment: TrendingFragment
 ) : RecyclerView.Adapter<TrendingAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(

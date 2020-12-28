@@ -27,7 +27,7 @@
                 android:layout_weight="1"
                 android:text="Comments 4.6 K"
                 android:textColor="@color/black"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
 
             <ImageView
                 android:id="@+id/imgClose"
@@ -40,12 +40,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:padding="5dp"
             android:weightSum="8">
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
                 android:layout_weight=".8"
                 android:src="@drawable/ic_return_pic" />
 
@@ -73,10 +74,10 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                             android:fontFamily="@font/open_sans_regular"
+                            android:fontFamily="@font/montserrat_regular"
                             android:text="Add a comment..."
                             android:textColor="@color/dark_grey"
-                            android:textSize="20dp" />
+                            android:textSize="16sp" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -95,16 +96,16 @@
             android:weightSum="8">
 
             <TextView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_weight=".8"
                 android:background="@drawable/circle_pink"
-                 android:fontFamily="@font/open_sans_regular"
+                android:fontFamily="@font/montserrat_regular"
                 android:gravity="center"
                 android:src="@drawable/ic_return_pic"
                 android:text="K"
                 android:textColor="@color/white"
-                android:textSize="35sp" />
+                android:textSize="25sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -130,10 +131,10 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-
-                             android:fontFamily="@font/open_sans_regular"
+                            android:fontFamily="@font/montserrat_regular"
                             android:text="Kunal Sharma . 2 hours ago"
-                            android:textColor="@color/dark_grey" />
+                            android:textColor="@color/dark_grey"
+                            android:textSize="14sp" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -155,10 +156,10 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                     android:fontFamily="@font/open_sans_regular"
+                                    android:fontFamily="@font/montserrat_regular"
                                     android:text="25"
                                     android:textColor="@color/grey_color"
-                                    android:textSize="18sp" />
+                                    android:textSize="14sp" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -176,10 +177,10 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                     android:fontFamily="@font/open_sans_regular"
+                                    android:fontFamily="@font/montserrat_regular"
                                     android:text="25"
                                     android:textColor="@color/grey_color"
-                                    android:textSize="18sp" />
+                                    android:textSize="14sp" />
                             </LinearLayout>
 
                             <TextView
@@ -187,10 +188,10 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="30dp"
-                                 android:fontFamily="@font/open_sans_regular"
+                                android:fontFamily="@font/montserrat_regular"
                                 android:text="Reply"
                                 android:textColor="@color/dark_grey"
-                                android:textSize="16sp" />
+                                android:textSize="14sp" />
                         </LinearLayout>
 
 
@@ -230,16 +231,16 @@
             android:weightSum="8">
 
             <TextView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_weight=".8"
                 android:background="@drawable/circle_pink"
-                 android:fontFamily="@font/open_sans_regular"
+                android:fontFamily="@font/montserrat_regular"
                 android:gravity="center"
                 android:src="@drawable/ic_return_pic"
                 android:text="K"
                 android:textColor="@color/white"
-                android:textSize="35sp" />
+                android:textSize="25sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -265,10 +266,10 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-
-                             android:fontFamily="@font/open_sans_regular"
+                            android:fontFamily="@font/montserrat_regular"
                             android:text="Kunal Sharma . 2 hours ago"
-                            android:textColor="@color/dark_grey" />
+                            android:textColor="@color/dark_grey"
+                            android:textSize="14sp" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -290,10 +291,10 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                     android:fontFamily="@font/open_sans_regular"
+                                    android:fontFamily="@font/montserrat_regular"
                                     android:text="25"
                                     android:textColor="@color/grey_color"
-                                    android:textSize="18sp" />
+                                    android:textSize="14sp" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -311,20 +312,21 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                     android:fontFamily="@font/open_sans_regular"
+                                    android:fontFamily="@font/montserrat_regular"
                                     android:text="25"
                                     android:textColor="@color/grey_color"
-                                    android:textSize="18sp" />
+                                    android:textSize="14sp" />
                             </LinearLayout>
 
                             <TextView
+                                android:id="@+id/tvReply"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="30dp"
-                                 android:fontFamily="@font/open_sans_regular"
+                                android:fontFamily="@font/montserrat_regular"
                                 android:text="Reply"
                                 android:textColor="@color/dark_grey"
-                                android:textSize="16sp" />
+                                android:textSize="14sp" />
                         </LinearLayout>
 
 
@@ -332,6 +334,7 @@
 
 
                     <LinearLayout
+                        android:id="@+id/imgMenuOtion"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="top"
@@ -363,16 +366,16 @@
             android:weightSum="8">
 
             <TextView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_weight=".8"
                 android:background="@drawable/circle_pink"
-                 android:fontFamily="@font/open_sans_regular"
+                android:fontFamily="@font/montserrat_regular"
                 android:gravity="center"
                 android:src="@drawable/ic_return_pic"
                 android:text="K"
                 android:textColor="@color/white"
-                android:textSize="35sp" />
+                android:textSize="25sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -398,10 +401,10 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-
-                             android:fontFamily="@font/open_sans_regular"
+                            android:fontFamily="@font/montserrat_regular"
                             android:text="Kunal Sharma . 2 hours ago"
-                            android:textColor="@color/dark_grey" />
+                            android:textColor="@color/dark_grey"
+                            android:textSize="14sp" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -423,10 +426,10 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                     android:fontFamily="@font/open_sans_regular"
+                                    android:fontFamily="@font/montserrat_regular"
                                     android:text="25"
                                     android:textColor="@color/grey_color"
-                                    android:textSize="18sp" />
+                                    android:textSize="14sp" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -444,20 +447,21 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                     android:fontFamily="@font/open_sans_regular"
+                                    android:fontFamily="@font/montserrat_regular"
                                     android:text="25"
                                     android:textColor="@color/grey_color"
-                                    android:textSize="18sp" />
+                                    android:textSize="14sp" />
                             </LinearLayout>
 
                             <TextView
+                                android:id="@+id/tvReply"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="30dp"
-                                 android:fontFamily="@font/open_sans_regular"
+                                android:fontFamily="@font/montserrat_regular"
                                 android:text="Reply"
                                 android:textColor="@color/dark_grey"
-                                android:textSize="16sp" />
+                                android:textSize="14sp" />
                         </LinearLayout>
 
 
@@ -465,6 +469,7 @@
 
 
                     <LinearLayout
+                        android:id="@+id/imgMenuOtion"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="top"
@@ -496,16 +501,16 @@
             android:weightSum="8">
 
             <TextView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_weight=".8"
                 android:background="@drawable/circle_pink"
-                 android:fontFamily="@font/open_sans_regular"
+                android:fontFamily="@font/montserrat_regular"
                 android:gravity="center"
                 android:src="@drawable/ic_return_pic"
                 android:text="K"
                 android:textColor="@color/white"
-                android:textSize="35sp" />
+                android:textSize="25sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -531,10 +536,10 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-
-                             android:fontFamily="@font/open_sans_regular"
+                            android:fontFamily="@font/montserrat_regular"
                             android:text="Kunal Sharma . 2 hours ago"
-                            android:textColor="@color/dark_grey" />
+                            android:textColor="@color/dark_grey"
+                            android:textSize="14sp" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -556,10 +561,10 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                     android:fontFamily="@font/open_sans_regular"
+                                    android:fontFamily="@font/montserrat_regular"
                                     android:text="25"
                                     android:textColor="@color/grey_color"
-                                    android:textSize="18sp" />
+                                    android:textSize="14sp" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -577,20 +582,21 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                     android:fontFamily="@font/open_sans_regular"
+                                    android:fontFamily="@font/montserrat_regular"
                                     android:text="25"
                                     android:textColor="@color/grey_color"
-                                    android:textSize="18sp" />
+                                    android:textSize="14sp" />
                             </LinearLayout>
 
                             <TextView
+                                android:id="@+id/tvReply"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="30dp"
-                                 android:fontFamily="@font/open_sans_regular"
+                                android:fontFamily="@font/montserrat_regular"
                                 android:text="Reply"
                                 android:textColor="@color/dark_grey"
-                                android:textSize="16sp" />
+                                android:textSize="14sp" />
                         </LinearLayout>
 
 
@@ -598,6 +604,7 @@
 
 
                     <LinearLayout
+                        android:id="@+id/imgMenuOtion"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="top"
@@ -629,16 +636,16 @@
             android:weightSum="8">
 
             <TextView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_weight=".8"
                 android:background="@drawable/circle_pink"
-                 android:fontFamily="@font/open_sans_regular"
+                android:fontFamily="@font/montserrat_regular"
                 android:gravity="center"
                 android:src="@drawable/ic_return_pic"
                 android:text="K"
                 android:textColor="@color/white"
-                android:textSize="35sp" />
+                android:textSize="25sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -664,10 +671,10 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-
-                             android:fontFamily="@font/open_sans_regular"
+                            android:fontFamily="@font/montserrat_regular"
                             android:text="Kunal Sharma . 2 hours ago"
-                            android:textColor="@color/dark_grey" />
+                            android:textColor="@color/dark_grey"
+                            android:textSize="14sp" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -689,10 +696,10 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                     android:fontFamily="@font/open_sans_regular"
+                                    android:fontFamily="@font/montserrat_regular"
                                     android:text="25"
                                     android:textColor="@color/grey_color"
-                                    android:textSize="18sp" />
+                                    android:textSize="14sp" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -710,20 +717,21 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                     android:fontFamily="@font/open_sans_regular"
+                                    android:fontFamily="@font/montserrat_regular"
                                     android:text="25"
                                     android:textColor="@color/grey_color"
-                                    android:textSize="18sp" />
+                                    android:textSize="14sp" />
                             </LinearLayout>
 
                             <TextView
+                                android:id="@+id/tvReply"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="30dp"
-                                 android:fontFamily="@font/open_sans_regular"
+                                android:fontFamily="@font/montserrat_regular"
                                 android:text="Reply"
                                 android:textColor="@color/dark_grey"
-                                android:textSize="16sp" />
+                                android:textSize="14sp" />
                         </LinearLayout>
 
 
@@ -731,6 +739,142 @@
 
 
                     <LinearLayout
+                        android:id="@+id/imgMenuOtion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_weight=".5"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_menu"
+                            app:tint="@color/dark_grey" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/grey_color" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:weightSum="8">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight=".8"
+                android:background="@drawable/circle_pink"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:src="@drawable/ic_return_pic"
+                android:text="K"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_weight="7.2"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="5">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="4.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="Kunal Sharma . 2 hours ago"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_like" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="25"
+                                    android:textColor="@color/grey_color"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_comment_white"
+                                    app:tint="@color/dark_grey" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="25"
+                                    android:textColor="@color/grey_color"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tvReply"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="Reply"
+                                android:textColor="@color/dark_grey"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/imgMenuOtion"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="top"

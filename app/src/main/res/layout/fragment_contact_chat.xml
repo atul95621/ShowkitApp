@@ -5,6 +5,503 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".chat.ContactChatFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:weightSum="8">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight=".8"
+                android:src="@drawable/ic_return_pic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_weight="7.2"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="5">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="4.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                             android:fontFamily="@font/montserrat_semi_bold"
+                            android:text="Jaydeep"
+                            android:textColor="@color/dark_grey" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_double_tick_indicator" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="(3) Today, 12:13"
+                                android:textColor="@color/grey_color" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="21:23" />
+
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/circle_blue_small"
+                            android:gravity="center"
+                            android:text="5"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/grey_color" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:weightSum="8">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight=".8"
+                android:src="@drawable/ic_return_pic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_weight="7.2"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="5">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="4.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                             android:fontFamily="@font/montserrat_semi_bold"
+                            android:text="Jaydeep"
+                            android:textColor="@color/dark_grey" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_double_tick_indicator" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="(3) Today, 12:13"
+                                android:textColor="@color/grey_color" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="21:23" />
+
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/circle_blue_small"
+                            android:gravity="center"
+                            android:text="5"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/grey_color" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:weightSum="8">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight=".8"
+                android:src="@drawable/ic_return_pic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_weight="7.2"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="5">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="4.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                             android:fontFamily="@font/montserrat_semi_bold"
+                            android:text="Jaydeep"
+                            android:textColor="@color/dark_grey" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_double_tick_indicator" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="(3) Today, 12:13"
+                                android:textColor="@color/grey_color" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="21:23" />
+
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/circle_blue_small"
+                            android:gravity="center"
+                            android:text="5"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/grey_color" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:weightSum="8">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight=".8"
+                android:src="@drawable/ic_return_pic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_weight="7.2"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="5">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="4.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                             android:fontFamily="@font/montserrat_semi_bold"
+                            android:text="Jaydeep"
+                            android:textColor="@color/dark_grey" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_double_tick_indicator" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="(3) Today, 12:13"
+                                android:textColor="@color/grey_color" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="21:23" />
+
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/circle_blue_small"
+                            android:gravity="center"
+                            android:text="5"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/grey_color" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:weightSum="8">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight=".8"
+                android:src="@drawable/ic_return_pic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_weight="7.2"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="5">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="4.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                             android:fontFamily="@font/montserrat_semi_bold"
+                            android:text="Jaydeep"
+                            android:textColor="@color/dark_grey" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_double_tick_indicator" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="(3) Today, 12:13"
+                                android:textColor="@color/grey_color" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="21:23" />
+
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/circle_blue_small"
+                            android:gravity="center"
+                            android:text="5"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/grey_color" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".chat.ContactChatFragment">
 <LinearLayout
     android:layout_width="match_parent"
     android:orientation="vertical"
@@ -46,7 +543,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/open_sans_semibold"
+                         android:fontFamily="@font/montserrat_semi_bold"
                         android:text="Jaydeep"
                         android:textColor="@color/dark_grey" />
 
@@ -64,7 +561,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
-                             android:fontFamily="@font/open_sans_regular"
+                             android:fontFamily="@font/montserrat_regular"
                             android:text="(3) Today, 12:13"
                             android:textColor="@color/grey_color" />
                     </LinearLayout>
@@ -132,7 +629,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/open_sans_semibold"
+                         android:fontFamily="@font/montserrat_semi_bold"
                         android:text="Jaydeep"
                         android:textColor="@color/dark_grey" />
 
@@ -150,7 +647,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
-                             android:fontFamily="@font/open_sans_regular"
+                             android:fontFamily="@font/montserrat_regular"
                             android:text="(3) Today, 12:13"
                             android:textColor="@color/grey_color" />
                     </LinearLayout>
@@ -218,7 +715,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/open_sans_semibold"
+                         android:fontFamily="@font/montserrat_semi_bold"
                         android:text="Jaydeep"
                         android:textColor="@color/dark_grey" />
 
@@ -236,7 +733,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
-                             android:fontFamily="@font/open_sans_regular"
+                             android:fontFamily="@font/montserrat_regular"
                             android:text="(3) Today, 12:13"
                             android:textColor="@color/grey_color" />
                     </LinearLayout>
@@ -304,7 +801,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/open_sans_semibold"
+                         android:fontFamily="@font/montserrat_semi_bold"
                         android:text="Jaydeep"
                         android:textColor="@color/dark_grey" />
 
@@ -322,7 +819,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
-                             android:fontFamily="@font/open_sans_regular"
+                             android:fontFamily="@font/montserrat_regular"
                             android:text="(3) Today, 12:13"
                             android:textColor="@color/grey_color" />
                     </LinearLayout>
@@ -390,7 +887,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/open_sans_semibold"
+                         android:fontFamily="@font/montserrat_semi_bold"
                         android:text="Jaydeep"
                         android:textColor="@color/dark_grey" />
 
@@ -408,7 +905,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
-                             android:fontFamily="@font/open_sans_regular"
+                             android:fontFamily="@font/montserrat_regular"
                             android:text="(3) Today, 12:13"
                             android:textColor="@color/grey_color" />
                     </LinearLayout>
@@ -441,4 +938,4 @@
     </LinearLayout>
 </LinearLayout>
 
-</ScrollView>
+</ScrollView>-->

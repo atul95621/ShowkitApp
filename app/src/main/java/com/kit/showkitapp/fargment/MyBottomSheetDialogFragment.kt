@@ -8,11 +8,9 @@ import android.view.ViewGroup
 import android.widget.PopupMenu
 import android.widget.Toast
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import com.kit.showkitapp.HomeActivity
+import com.kit.showkitapp.activity.HomeActivity
 import com.kit.showkitapp.R
 import kotlinx.android.synthetic.main.bottom_sheet_persistent.view.*
-import kotlinx.android.synthetic.main.item_layout_trending.*
-import kotlinx.android.synthetic.main.item_layout_trending.view.*
 
 
 class MyBottomSheetDialogFragment(var homeActivity: HomeActivity) : BottomSheetDialogFragment() {

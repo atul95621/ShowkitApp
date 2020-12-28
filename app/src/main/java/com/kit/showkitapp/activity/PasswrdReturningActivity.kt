@@ -1,4 +1,4 @@
-package com.kit.showkitapp
+package com.kit.showkitapp.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,9 +6,9 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.WindowManager
+import com.kit.showkitapp.R
 import kotlinx.android.synthetic.main.activity_passwrd_returning.*
 import kotlinx.android.synthetic.main.activity_welcome_back.*
-import kotlinx.android.synthetic.main.activity_welcome_back.linLogin
 
 class PasswrdReturningActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

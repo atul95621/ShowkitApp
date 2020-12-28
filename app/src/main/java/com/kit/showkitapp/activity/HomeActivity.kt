@@ -1,18 +1,14 @@
-package com.kit.showkitapp
+package com.kit.showkitapp.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
 import android.view.View
-import android.widget.PopupMenu
-import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.kit.showkitapp.R
 import com.kit.showkitapp.chat.ChatActivity
 import com.kit.showkitapp.fargment.*
 import kotlinx.android.synthetic.main.activity_home.*
-import kotlinx.android.synthetic.main.item_layout_trending.*
-import kotlinx.android.synthetic.main.item_layout_trending.view.*
 
 class HomeActivity : AppCompatActivity() {
 
@@ -20,6 +16,9 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
+//        window.statusBarColor = ContextCompat.getColor(this, R.color.white)
+
 
         openFragment(DashboardFragment(this))
 

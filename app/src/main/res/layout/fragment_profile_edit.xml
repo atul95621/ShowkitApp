@@ -29,37 +29,37 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:fontFamily="@font/open_sans_semibold"
+            android:fontFamily="@font/montserrat_bold"
             android:text="Add to change photo"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorStatusBar"
             android:textSize="18sp" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="15dp"
-             android:fontFamily="@font/open_sans_regular"
+            android:fontFamily="@font/montserrat_regular"
             android:hint="Name" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="15dp"
-             android:fontFamily="@font/open_sans_regular"
+            android:fontFamily="@font/montserrat_regular"
             android:hint="Showkit Id" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="15dp"
-             android:fontFamily="@font/open_sans_regular"
+            android:fontFamily="@font/montserrat_regular"
             android:hint="Bio" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="15dp"
-             android:fontFamily="@font/open_sans_regular"
+            android:fontFamily="@font/montserrat_regular"
             android:hint="Date of birth" />
 
         <TextView
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="start"
             android:layout_marginTop="20dp"
-             android:fontFamily="@font/open_sans_regular"
+            android:fontFamily="@font/montserrat_semi_bold"
             android:text="Are you?"
             android:textColor="@color/dark_grey"
             android:textSize="18sp" />
@@ -96,7 +96,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                     android:fontFamily="@font/open_sans_regular"
+                    android:fontFamily="@font/montserrat_regular"
                     android:text="Male"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -121,7 +121,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                     android:fontFamily="@font/open_sans_regular"
+                    android:fontFamily="@font/montserrat_regular"
                     android:text="Female"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -132,7 +132,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="start"
             android:layout_marginTop="20dp"
-             android:fontFamily="@font/open_sans_regular"
+            android:fontFamily="@font/montserrat_semi_bold"
             android:text="Social Links"
             android:textColor="@color/dark_grey"
             android:textSize="18sp" />
@@ -218,7 +218,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="start"
             android:layout_marginTop="20dp"
-             android:fontFamily="@font/open_sans_regular"
+            android:fontFamily="@font/montserrat_regular"
             android:text="Personal Information"
             android:textColor="@color/dark_grey"
             android:textSize="18sp" />
@@ -227,14 +227,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="15dp"
-             android:fontFamily="@font/open_sans_regular"
+            android:fontFamily="@font/montserrat_regular"
             android:hint="Email" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="15dp"
-             android:fontFamily="@font/open_sans_regular"
+            android:fontFamily="@font/montserrat_regular"
             android:hint="Mobile" />
 
         <View
@@ -248,7 +248,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="start"
             android:layout_marginTop="20dp"
-            android:fontFamily="@font/open_sans_semibold"
+            android:fontFamily="@font/montserrat_semi_bold"
             android:text="Switch to business account"
             android:textColor="@color/colorPrimary"
             android:textSize="16sp" />

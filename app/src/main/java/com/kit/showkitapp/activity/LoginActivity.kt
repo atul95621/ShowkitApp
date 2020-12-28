@@ -1,16 +1,10 @@
-package com.kit.showkitapp
+package com.kit.showkitapp.activity
 
-import android.app.Activity
-import android.app.Dialog
 import android.content.Intent
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
-import android.view.ViewGroup
-import android.view.Window
 import android.view.WindowManager
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.kit.showkitapp.R
 import kotlinx.android.synthetic.main.activity_login.*
 
 
