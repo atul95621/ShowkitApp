@@ -1,12 +1,8 @@
 package com.mindorks.retrofit.coroutines.data.api
 
-import com.kit.showkitapp.model.ContinueMobDataModel
-import com.kit.showkitapp.model.SignUpModel
-import com.kit.showkitapp.model.VerifyOtpDataModel
-import retrofit2.Call
+import com.kit.showkitapp.model.*
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
-import retrofit2.http.GET
 import retrofit2.http.POST
 
 interface ApiService {
@@ -48,4 +44,29 @@ interface ApiService {
         @Field("user_curent_location") user_curent_location: String,
         @Field("from_mobile") from_mobile: String
     ): VerifyOtpDataModel
+
+
+    @FormUrlEncoded
+    @POST("social_login")
+    suspend fun socialLoginApi(
+        @Field("email") email: String,
+        @Field("login_type") login_type: String,
+        @Field("device_id") device_id: String,
+        @Field("device_type") device_type: String,
+        @Field("device_token") device_token: String,
+        @Field("from_mobile") from_mobile: String
+
+    ): SocialLoginModel
+
+    @FormUrlEncoded
+    @POST("get_language")
+    suspend fun getLanguageApi(
+        @Field("cat_id") cat_id: String
+    ): LanguageModel
+
+    @FormUrlEncoded
+    @POST("get_category")
+    suspend fun getCategoryApi(
+        @Field("cat_id") cat_id: String
+    ): CategoryIntrestModel
 }
