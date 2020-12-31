@@ -11,6 +11,8 @@ import kotlinx.android.synthetic.main.activity_passwrd_returning.*
 import kotlinx.android.synthetic.main.activity_welcome_back.*
 
 class PasswrdReturningActivity : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_passwrd_returning)

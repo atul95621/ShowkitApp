@@ -69,4 +69,12 @@ interface ApiService {
     suspend fun getCategoryApi(
         @Field("cat_id") cat_id: String
     ): CategoryIntrestModel
+
+    @FormUrlEncoded
+    @POST("add_update_passcode")
+    suspend fun addPasscode(
+        @Field("Authorization") auth: String,
+        @Field("passcode") passcode: String
+
+    ): SetPasscodeModel
 }

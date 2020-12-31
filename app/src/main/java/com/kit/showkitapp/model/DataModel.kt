@@ -66,3 +66,8 @@ data class Data_Category(
     val updatedAt: String,
     var isSelected:Boolean=false
 )
+
+data class SetPasscodeModel(
+    val message: String,
+    val status: Int
+)

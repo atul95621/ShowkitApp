@@ -30,14 +30,14 @@
         <activity android:name=".activity.WelcomeBackActivity" />
         <activity android:name=".chat.ChatActivity" />
         <activity android:name=".activity.VerifyOtpActivity" />
-   <!--     <activity
+        <activity
             android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>-->
+        </activity>
         <activity android:name=".activity.PasswrdReturningActivity" />
         <activity android:name=".activity.GenderBirthActivity" />
         <activity android:name=".activity.LoginActivity" />
@@ -46,11 +46,11 @@
         <activity android:name=".activity.ForgotPassword" />
         <activity android:name=".activity.OtpScreen" />
         <activity android:name=".activity.HomeActivity" >
-            <intent-filter>
+          <!--  <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>-->
         </activity>
         <activity android:name=".activity.ProfileAddActivity" />
     </application>
