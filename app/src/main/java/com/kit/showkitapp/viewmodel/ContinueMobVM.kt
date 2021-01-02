@@ -2,13 +2,13 @@ package com.kit.showkitapp.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.*
+import com.kit.showkitapp.activity.ContinueMobActivity
 import com.kit.showkitapp.model.ContinueMobDataModel
-import com.kit.showkitapp.model.SignUpModel
 import com.mindorks.retrofit.coroutines.data.api.RetrofitBuilder
 import com.mindorks.retrofit.coroutines.utils.Resource
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import retrofit2.http.Field
+import kotlinx.coroutines.withContext
 import java.net.HttpRetryException
 
 class ContinueMobVM() : ViewModel() {
@@ -23,7 +23,8 @@ class ContinueMobVM() : ViewModel() {
 
     ) {
         Log.e("resp send otp:", "hitting")
-        viewModelScope.launch {
+        viewModelScope.launch() {
+
             sendOTPLivedata.value = Resource.loading(data = null)
             try {
                 var api = RetrofitBuilder.apiService
@@ -39,6 +40,7 @@ class ContinueMobVM() : ViewModel() {
             } catch (exception: Exception) {
                 sendOTPLivedata.value =
                     Resource.error(data = null, message = exception.message ?: "Error Occurred!")
+
             }
         }
     }

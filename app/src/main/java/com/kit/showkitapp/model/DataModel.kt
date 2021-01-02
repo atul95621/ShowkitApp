@@ -71,3 +71,7 @@ data class SetPasscodeModel(
     val message: String,
     val status: Int
 )
+
+data class TopModel(
+    var name: String
+)

@@ -46,12 +46,12 @@ class ContinueMobActivity : BaseActivity() {
                 intent.putExtra("COUNTRY_CODE", ccp.defaultCountryCode.toString());
 
                 startActivity(intent)
-                /*     continueMobVM.sendOTP(
-                         edtMobileNumber.text.toString().trim(),
-                         ccp.defaultCountryCode.toString().trim(),
-                         "true",
-                         "register"
-                     )*/
+                /*  continueMobVM.sendOTP(
+                      edtMobileNumber.text.toString().trim(),
+                      ccp.defaultCountryCode.toString().trim(),
+                      "true",
+                      "register"
+                  )*/
             }
         }
     }

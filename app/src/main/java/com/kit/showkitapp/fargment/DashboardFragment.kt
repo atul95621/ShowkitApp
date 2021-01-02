@@ -1,6 +1,7 @@
 package com.kit.showkitapp.fargment
 
 import android.app.Dialog
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
@@ -19,6 +20,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.kit.showkitapp.R
 import com.kit.showkitapp.activity.HomeActivity
+import com.kit.showkitapp.activity.SearchActivity
+import com.kit.showkitapp.activity.VerifyOtpActivity
 import com.kit.showkitapp.adapter.CategoryAdapter
 import com.kit.showkitapp.adapter.LanguageAdapter
 import com.kit.showkitapp.model.CategoryIntrestModel
@@ -28,6 +31,7 @@ import com.kit.showkitapp.model.LanguageModel
 import com.kit.showkitapp.viewmodel.DashboardVM
 import com.legal.smart.util.ProgressBarClass
 import com.mindorks.retrofit.coroutines.utils.Status
+import kotlinx.android.synthetic.main.activity_continue_mob.*
 import kotlinx.android.synthetic.main.fragment_dashboard.*
 import kotlinx.android.synthetic.main.fragment_dashboard.view.*
 
@@ -106,6 +110,12 @@ class DashboardFragment(var homeActivity: HomeActivity) : Fragment() {
         {
             dashboardVM.getCategoryApi()
 //            showInterestDialog()
+        }
+
+        view.imgSearch.setOnClickListener()
+        {
+            var intent = Intent(homeActivity, SearchActivity::class.java)
+            startActivity(intent)
         }
     }
 
