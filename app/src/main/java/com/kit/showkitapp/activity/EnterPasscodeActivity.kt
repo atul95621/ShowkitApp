@@ -18,13 +18,17 @@ import kotlinx.android.synthetic.main.activity_enter_passcode.*
 class EnterPasscodeActivity : BaseActivity() {
 
     lateinit var enterPassVM: EnterPassVM
+
     var mobile_no = ""
+    var country_code = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_enter_passcode)
 
         mobile_no = intent.getStringExtra("MOBILE_NO").toString()
+        country_code = intent.getStringExtra("COUNTRY_CODE").toString()
+
         enterPassVM = ViewModelProviders.of(this).get(EnterPassVM::class.java)
 
 
@@ -38,7 +42,12 @@ class EnterPasscodeActivity : BaseActivity() {
             if (edtPasscode.text.toString().trim().isNullOrEmpty()) {
                 showToast(this, "Please set your passcode")
             } else {
-                enterPassVM.setPasscode(edtPasscode.text.toString().trim())
+                var intent = Intent(this, ProfileAddActivity::class.java)
+                intent.putExtra("MOBILE_NO", mobile_no);
+                intent.putExtra("COUNTRY_CODE", country_code);
+
+                startActivity(intent)
+//                enterPassVM.setPasscode(edtPasscode.text.toString().trim())
             }
         }
 

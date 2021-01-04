@@ -79,6 +79,8 @@
                             app:civ_border_width="2dp" />
 
                         <EditText
+                            android:id="@+id/edtName"
+                            android:maxLines="1"
                             android:layout_width="match_parent"
                             android:layout_height="45dp"
                             android:layout_marginTop="50dp"
@@ -88,6 +90,8 @@
                             android:paddingStart="10dp" />
 
                         <EditText
+                            android:id="@+id/edtId"
+                            android:maxLines="1"
                             android:layout_width="match_parent"
                             android:layout_height="45dp"
                             android:layout_marginTop="20dp"
@@ -95,6 +99,14 @@
                              android:fontFamily="@font/montserrat_regular"
                             android:hint="Your Showkt Id"
                             android:paddingStart="10dp" />
+                        <TextView
+                            android:id="@+id/validateId"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="end"
+                            android:textColor="@color/marron_full"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Validate showkit ID"/>
                     </LinearLayout>
 
 

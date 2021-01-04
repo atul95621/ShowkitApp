@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.view.WindowManager
+import android.widget.BaseAdapter
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProviders
 import com.kit.showkitapp.R
@@ -22,14 +23,25 @@ import androidx.lifecycle.coroutineScope
 import androidx.lifecycle.lifecycleScope
 import com.kit.showkitapp.model.SignUpModel
 import com.legal.smart.util.ProgressBarClass
+import com.shokh.sample.BaseActivity
 
-class GenderBirthActivity : AppCompatActivity() {
+class GenderBirthActivity : BaseActivity() {
 
     lateinit var genderVM: GenderVM
-
+    var mobile_no = ""
+    var country_code = ""
+    var userName = ""
+    var showkitId = ""
+    var gender = ""
+    var hideDOB = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gender_birth)
+
+        mobile_no = intent.getStringExtra("MOBILE_NO").toString()
+        country_code = intent.getStringExtra("COUNTRY_CODE").toString()
+        userName = intent.getStringExtra("USER_NAME").toString()
+        showkitId = intent.getStringExtra("SHOWKIT_ID").toString()
 
         genderVM = ViewModelProviders.of(this).get(GenderVM::class.java)
 
@@ -46,6 +58,7 @@ class GenderBirthActivity : AppCompatActivity() {
             imgMaleWrite.visibility = View.VISIBLE
             imgFemaleWrite.visibility = View.GONE
             imgOthersWrite.visibility = View.GONE
+            gender = "Male"
         }
 
         linFemale.setOnClickListener()
@@ -53,6 +66,7 @@ class GenderBirthActivity : AppCompatActivity() {
             imgMaleWrite.visibility = View.GONE
             imgFemaleWrite.visibility = View.VISIBLE
             imgOthersWrite.visibility = View.GONE
+            gender = "Female"
         }
 
         linOthers.setOnClickListener()
@@ -60,6 +74,7 @@ class GenderBirthActivity : AppCompatActivity() {
             imgMaleWrite.visibility = View.GONE
             imgFemaleWrite.visibility = View.GONE
             imgOthersWrite.visibility = View.VISIBLE
+            gender = "Others"
         }
 
         tvDate.setOnClickListener()
@@ -72,26 +87,41 @@ class GenderBirthActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         );
 
+        switchDOB?.setOnCheckedChangeListener { _, isChecked ->
+            hideDOB = if (isChecked) "true" else "false"
+
+        }
+
         imgNext.setOnClickListener()
-        {      var intent = Intent(this, WelcomeBackActivity::class.java)
-            startActivity(intent)
+        {
+
+            if (gender.toString().trim().isNullOrEmpty()) {
+                showToast(this, "Please choose gender")
+            } else if (tvDate.text.toString().trim().equals("DD/MM/YYYY")) {
+                showToast(this, "Please enter valid date")
+
+            } else {
+                var intent = Intent(this, HomeActivity::class.java)
+                startActivity(intent)
 //            signupApi()
+            }
+
         }
     }
 
     fun signupApi() {
         lifecycle.coroutineScope.launch {
             genderVM.postSignup(
-                "Test Acc35",
-                "456123789345",
-                "Test_JO789",
-                "male",
-                "1991-06-09",
-                "true",
+                userName,
+                mobile_no,
+                showkitId,
+                gender,
+                tvDate.text.toString(),
+                hideDOB,
                 "dd41f54d54fdfklfde4r6541w 56456456e4r",
                 "true",
-                "test@test.com",
                 "",
+                country_code,
                 ""
             )
         }
@@ -108,7 +138,7 @@ class GenderBirthActivity : AppCompatActivity() {
                         var modelObj = resource.data as SignUpModel
                         Log.e("resp44", "" + modelObj.toString())
                         if (modelObj.status == 1) {
-                            var intent = Intent(this, WelcomeBackActivity::class.java)
+                            var intent = Intent(this, HomeActivity::class.java)
                             startActivity(intent)
                             Toast.makeText(this, modelObj.message, Toast.LENGTH_LONG).show()
                         } else {

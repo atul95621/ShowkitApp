@@ -65,6 +65,8 @@ class VerifyOtpActivity : BaseActivity() {
             } else {
                 var intent = Intent(this, EnterPasscodeActivity::class.java)
                 intent.putExtra("MOBILE_NO", mobileNo);
+                intent.putExtra("COUNTRY_CODE", countryCode);
+
                 startActivity(intent)
                 /* verifyOtpVM.verifyOTP(
                      mobileNo,
@@ -182,6 +184,8 @@ class VerifyOtpActivity : BaseActivity() {
                         if (modelObj.status == 1) {
                             var intent = Intent(this, EnterPasscodeActivity::class.java)
                             intent.putExtra("MOBILE_NO", mobileNo);
+                            intent.putExtra("COUNTRY_CODE", countryCode);
+
                             startActivity(intent)
                             Toast.makeText(this, modelObj.message, Toast.LENGTH_LONG).show()
                         } else {

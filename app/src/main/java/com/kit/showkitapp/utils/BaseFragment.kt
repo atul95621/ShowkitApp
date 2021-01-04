@@ -63,7 +63,7 @@ open class BaseFragment : Fragment() {
 
         //utils
 //        connectionDetector = ConnectivityManager(activity!!)
-        sessionManager = SessionManager(activity)
+//        sessionManager = SessionManager(activity!!)
 
         /*    //injection
             AndroidSupportInjection.inject(this)*/

@@ -77,4 +77,10 @@ interface ApiService {
         @Field("passcode") passcode: String
 
     ): SetPasscodeModel
+
+    @FormUrlEncoded
+    @POST("check_showktid_exist")
+    suspend fun validateID(
+        @Field("showkt_id") showkt_id: String
+    ): ValidateIDModel
 }

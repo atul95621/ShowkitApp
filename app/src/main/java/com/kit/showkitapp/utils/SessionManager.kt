@@ -1,79 +1,50 @@
 package com.legal.smart.util;
+
 import android.content.Context
-import android.content.SharedPreferences
+import androidx.datastore.preferences.*
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.catch
+import kotlinx.coroutines.flow.map
+import java.io.IOException
 
-class SessionManager(context: Context?) {
+class SessionManager(context: Context) {
+    private val preferenceDataStore = context.createDataStore(name = "data_store_pref")
 
-    var sharedPreferences: SharedPreferences? = null
-    var editor: SharedPreferences.Editor? = null
+    suspend fun getData(
+        key: Preferences.Key<String>
+    ): Flow<String> {
 
-    // shared prefernce for storing the name, email and phone of previous user
-    var prevSharedPref: SharedPreferences? = null
-    var prevEditor: SharedPreferences.Editor? = null
+        val flowObserve: Flow<String> = preferenceDataStore.data
+            // catch will catch the exception if any
+            .catch {
+                if (it is IOException) {
+                    it.printStackTrace()
+                    emit(emptyPreferences())
+                } else {
+                    throw it
+                }
+            }
+            // map will give us the value
+            .map { preference ->
+                // "" will be passed if its null
+                preference[key] ?: ""
+            }
 
+        return flowObserve
+    }
 
-    init {
-
-        sharedPreferences = context?.getSharedPreferences("PREF_NAME", Context.MODE_PRIVATE)
-        editor = sharedPreferences?.edit()
-
-        /*     // shared prefernce for previous user
-             prevSharedPref = context?.getSharedPreferences("PREV_PREF", Context.MODE_PRIVATE)
-             prevEditor = prevSharedPref?.edit()*/
-
+    suspend fun setData(key: Preferences.Key<String>, value: String) {
+        preferenceDataStore.edit { preferences ->
+            preferences[key] = value
+        }
     }
 
 
     companion object {
-
-
-        val FCM_TOKEN = "fc_token"
-        val LOGGEDIN = "loggedin"
-
-        val USER_ID = "user_id"
-        val NAME = "name"
-        val USER_IMAGE = "user_image"
-        val TOKEN = "token"
-        val REGISTER_STATUS = "register_status"   //1 OR 0
-        val PHONE_NUMBER = "phone_number"
-        val EMAIL = "email"
-        val COUNTRY = "country"
-        val ROLE = "role"
-        val AGE_GROUP = "age_group"
-        val DEVICE_ID = "device_id"
+        val USER_NAME = preferencesKey<String>("user_name")
+        val USER_LOCATION = preferencesKey<String>("user_location")
+        val USER_AGE = preferencesKey<String>("user_age")
 
     }
-
-
-    fun setValues(key: String, value: String?) {
-        editor?.putString(key, value)
-        editor?.commit()
-    }
-
-    fun getValue(key: String): String? {
-        return sharedPreferences!!.getString(key, "")
-    }
-
-
-    fun clearValues() {
-        editor?.clear()
-        editor?.commit()
-    }
-
-/*
-    fun clearCetainValue(key: String) {
-        editor?.remove(key)
-        editor?.apply()
-    }
-
-    // get Previous value  of previous user
-    fun getPrevUserDetail(key: String): String? {
-        return prevSharedPref!!.getString(key, "")
-    }
-
-    fun setPrevUserDetail(key: String, value: String?) {
-        prevEditor?.putString(key, value)
-        prevEditor?.commit()
-    }*/
 
 }

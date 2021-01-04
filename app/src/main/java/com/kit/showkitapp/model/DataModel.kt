@@ -75,3 +75,9 @@ data class SetPasscodeModel(
 data class TopModel(
     var name: String
 )
+
+data class ValidateIDModel(
+    val id_exists: Boolean,
+    val message: String,
+    val status: Int
+)
