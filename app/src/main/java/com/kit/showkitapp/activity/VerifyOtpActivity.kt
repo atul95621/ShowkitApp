@@ -12,15 +12,20 @@ import android.util.Log
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.lifecycleScope
 import com.kit.showkitapp.R
 import com.kit.showkitapp.model.ContinueMobDataModel
 import com.kit.showkitapp.model.VerifyOtpDataModel
 import com.kit.showkitapp.viewmodel.VerifyOtpVM
 import com.legal.smart.util.ProgressBarClass
+import com.legal.smart.util.SessionManager
 import com.mindorks.retrofit.coroutines.utils.Status
 import com.shokh.sample.BaseActivity
 import kotlinx.android.synthetic.main.activity_continue_mob.*
 import kotlinx.android.synthetic.main.activity_verify_otp.*
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.launch
 
 
 class VerifyOtpActivity : BaseActivity() {
@@ -63,20 +68,27 @@ class VerifyOtpActivity : BaseActivity() {
             } else if (edt4.text.toString().trim().isNullOrEmpty()) {
                 showToast(this, "Please fill otp correctly")
             } else {
-                var intent = Intent(this, EnterPasscodeActivity::class.java)
-                intent.putExtra("MOBILE_NO", mobileNo);
-                intent.putExtra("COUNTRY_CODE", countryCode);
+                /* var intent = Intent(this, EnterPasscodeActivity::class.java)
+                 intent.putExtra("MOBILE_NO", mobileNo);
+                 intent.putExtra("COUNTRY_CODE", countryCode);
 
-                startActivity(intent)
-                /* verifyOtpVM.verifyOTP(
-                     mobileNo,
-                     "919058",
-                     "",
-                     "",
-                     "32456",
-                     "sfsfsf",
-                     "sdfsdf"
-                 )*/
+                 startActivity(intent)*/
+
+                var otp =
+                    edt1.text.toString().trim() + edt2.text.toString().trim() + edt3.text.toString()
+                        .trim() + edt4.text.toString().trim()
+                Log.e("otp","$otp   $mobileNo")
+
+
+                verifyOtpVM.verifyOTP(
+                    mobileNo,
+                    otp,
+                    "",
+                    "",
+                    "",
+                    "",
+                    "true"
+                )
             }
         }
 
@@ -85,8 +97,7 @@ class VerifyOtpActivity : BaseActivity() {
             verifyOtpVM.sendOTP(
                 mobileNo,
                 countryCode,
-                "true",
-                "register"
+                "true"
             )
         }
 
@@ -182,11 +193,21 @@ class VerifyOtpActivity : BaseActivity() {
                         var modelObj = resource.data as VerifyOtpDataModel
                         Log.e("resp44", "" + modelObj.toString())
                         if (modelObj.status == 1) {
+
+                            lifecycleScope.launch {
+                                sessionManager.setData(
+                                    SessionManager.ACCESS_TOKEN,
+                                    modelObj.data.access_token
+                                )
+                            }
+
                             var intent = Intent(this, EnterPasscodeActivity::class.java)
                             intent.putExtra("MOBILE_NO", mobileNo);
                             intent.putExtra("COUNTRY_CODE", countryCode);
-
+                            intent.putExtra("SHOWKT_ID_FLAG", modelObj.showkit_id.toString());
+                            intent.putExtra("IS_PROFILE_FLAG", modelObj.is_profile.toString());
                             startActivity(intent)
+
                             Toast.makeText(this, modelObj.message, Toast.LENGTH_LONG).show()
                         } else {
                             Toast.makeText(this, modelObj.message, Toast.LENGTH_LONG).show()

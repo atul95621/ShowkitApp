@@ -57,17 +57,17 @@ class GenderVM() : ViewModel() {
 
 
     fun postSignup(
+        auth: String,
         user_fullname: String,
-        user_phone: String,
         showkt_id: String,
         user_gender: String,
         user_dob: String,
         is_hide_dob: String,
         device_token: String,
+        device_id: String,
+        device_type: String,
         from_mobile: String,
-        user_email: String,
-        country_code: String,
-        user_curent_location: String
+        current_location: String
     ) {
         Log.e("resp send otp:", "hitting")
         viewModelScope.launch {
@@ -75,18 +75,18 @@ class GenderVM() : ViewModel() {
             try {
                 var api = RetrofitBuilder.apiService
                 signUpLivedata.value = Resource.success(
-                    data = api.signUpUser(
+                    data = api.updateUserProfile(
+                        auth,
                         user_fullname,
-                        user_phone,
                         showkt_id,
                         user_gender,
                         user_dob,
                         is_hide_dob,
                         device_token,
+                        device_id,
+                        device_type,
                         from_mobile,
-                        user_email,
-                        country_code,
-                        user_curent_location
+                        current_location
                     )
                 )
 

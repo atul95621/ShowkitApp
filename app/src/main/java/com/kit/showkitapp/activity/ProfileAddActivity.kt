@@ -22,7 +22,9 @@ class ProfileAddActivity : BaseActivity() {
     var mobile_no = ""
     var country_code = ""
     var userName = ""
-    var showkitId = ""
+    var is_profile = ""
+    var showkt_id = ""
+
     var isValidated = false
     lateinit var profileAddVM: ProfileAddVM
 
@@ -33,6 +35,8 @@ class ProfileAddActivity : BaseActivity() {
 
         mobile_no = intent.getStringExtra("MOBILE_NO").toString()
         country_code = intent.getStringExtra("COUNTRY_CODE").toString()
+        is_profile = intent.getStringExtra("IS_PROFILE_FLAG").toString()
+        showkt_id = intent.getStringExtra("SHOWKT_ID_FLAG").toString()
 
 
         getWindow().setFlags(
@@ -62,14 +66,16 @@ class ProfileAddActivity : BaseActivity() {
             } else if (isValidated == false) {
                 showToast(this, "Please validate your ID")
             } else {
-                var intent = Intent(this, GenderBirthActivity::class.java)
-                intent.putExtra("MOBILE_NO", mobile_no);
-                intent.putExtra("COUNTRY_CODE", country_code);
-                intent.putExtra("USER_NAME", userName);
-                intent.putExtra("SHOWKIT_ID", showkitId);
-                startActivity(intent)
-            }
+                if (is_profile == "false") {
+                    var intent = Intent(this, GenderBirthActivity::class.java)
+                    intent.putExtra("MOBILE_NO", mobile_no);
+                    intent.putExtra("COUNTRY_CODE", country_code);
+                    intent.putExtra("USER_NAME", userName);
+                    intent.putExtra("SHOWKT_ID_FLAG", showkt_id);
 
+                    startActivity(intent)
+                }
+            }
         }
     }
 
@@ -85,6 +91,7 @@ class ProfileAddActivity : BaseActivity() {
                         Log.e("resp44", "" + modelObj.toString())
                         if (modelObj.status == 1) {
                             isValidated = true
+
                             Toast.makeText(this, modelObj.message, Toast.LENGTH_LONG).show()
                         } else {
                             Toast.makeText(this, modelObj.message, Toast.LENGTH_LONG).show()

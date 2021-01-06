@@ -41,17 +41,21 @@ class ContinueMobActivity : BaseActivity() {
             } else if (edtMobileNumber.text.length != 10) {
                 showToast(this, "Please enter the correct mobile number")
             } else {
-                var intent = Intent(this, VerifyOtpActivity::class.java)
-                intent.putExtra("MOBILE_NO", edtMobileNumber.text.toString());
-                intent.putExtra("COUNTRY_CODE", ccp.defaultCountryCode.toString());
+                /*          var intent = Intent(this, VerifyOtpActivity::class.java)
+                          intent.putExtra("MOBILE_NO", edtMobileNumber.text.toString());
+                          intent.putExtra("COUNTRY_CODE", ccp.defaultCountryCode.toString());
 
-                startActivity(intent)
-                /*  continueMobVM.sendOTP(
-                      edtMobileNumber.text.toString().trim(),
-                      ccp.defaultCountryCode.toString().trim(),
-                      "true",
-                      "register"
-                  )*/
+                          startActivity(intent)*/
+                continueMobVM.sendOTP(
+                    edtMobileNumber.text.toString().trim(),
+                    ccp.defaultCountryCode.toString().trim(),
+                    "true"
+                )
+
+                Log.e(
+                    "info11", " ${edtMobileNumber.text.toString().trim()}" +"--"+
+                            "${ccp.defaultCountryCode.toString().trim()}"
+                )
             }
         }
     }
@@ -67,11 +71,12 @@ class ContinueMobActivity : BaseActivity() {
                         var modelObj = resource.data as ContinueMobDataModel
                         Log.e("resp44", "" + modelObj.toString())
                         if (modelObj.status == 1) {
+
                             var intent = Intent(this, VerifyOtpActivity::class.java)
                             intent.putExtra("MOBILE_NO", edtMobileNumber.text.toString());
                             intent.putExtra("COUNTRY_CODE", ccp.defaultCountryCode.toString());
-
                             startActivity(intent)
+
                             Toast.makeText(this, modelObj.message, Toast.LENGTH_LONG).show()
                         } else {
                             Toast.makeText(this, modelObj.message, Toast.LENGTH_LONG).show()

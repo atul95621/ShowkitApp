@@ -18,9 +18,7 @@ class ContinueMobVM() : ViewModel() {
     fun sendOTP(
         mobile: String,
         country_code: String,
-        from_mobile: String,
-        type: String
-
+        from_mobile: String
     ) {
         Log.e("resp send otp:", "hitting")
         viewModelScope.launch() {
@@ -32,8 +30,7 @@ class ContinueMobVM() : ViewModel() {
                     data = api.sendOTP(
                         mobile,
                         country_code,
-                        from_mobile,
-                        type
+                        from_mobile
                     )
                 )
 

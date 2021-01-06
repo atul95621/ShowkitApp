@@ -23,6 +23,7 @@ import androidx.lifecycle.coroutineScope
 import androidx.lifecycle.lifecycleScope
 import com.kit.showkitapp.model.SignUpModel
 import com.legal.smart.util.ProgressBarClass
+import com.legal.smart.util.SessionManager
 import com.shokh.sample.BaseActivity
 
 class GenderBirthActivity : BaseActivity() {
@@ -34,6 +35,7 @@ class GenderBirthActivity : BaseActivity() {
     var showkitId = ""
     var gender = ""
     var hideDOB = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gender_birth)
@@ -111,18 +113,18 @@ class GenderBirthActivity : BaseActivity() {
 
     fun signupApi() {
         lifecycle.coroutineScope.launch {
+            var access_token = sessionManager.getData(SessionManager.ACCESS_TOKEN)
             genderVM.postSignup(
+                access_token.toString(),
                 userName,
-                mobile_no,
+                userName,
                 showkitId,
                 gender,
                 tvDate.text.toString(),
                 hideDOB,
                 "dd41f54d54fdfklfde4r6541w 56456456e4r",
-                "true",
-                "",
-                country_code,
-                ""
+                "", "", ""
+
             )
         }
     }

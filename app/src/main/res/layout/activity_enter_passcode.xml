@@ -91,7 +91,7 @@
                             android:maxLength="4"
                             android:maxLines="1"
                             android:singleLine="true"
-                            android:text="2345"
+                            android:hint="____"
                             android:textColor="@color/marron" />
 
 

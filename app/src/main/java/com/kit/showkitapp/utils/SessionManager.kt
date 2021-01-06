@@ -44,6 +44,11 @@ class SessionManager(context: Context) {
         val USER_NAME = preferencesKey<String>("user_name")
         val USER_LOCATION = preferencesKey<String>("user_location")
         val USER_AGE = preferencesKey<String>("user_age")
+        val GENDER = preferencesKey<String>("gender")
+        val USER_ID = preferencesKey<String>("user_id")
+        val ACCESS_TOKEN = preferencesKey<String>("access_token")
+        val FIRST_NAME = preferencesKey<String>("first_name")
+        val LAST_NAME = preferencesKey<String>("last_name")
 
     }
 

@@ -7,13 +7,16 @@ import android.view.WindowManager
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.lifecycleScope
 import com.kit.showkitapp.R
 import com.kit.showkitapp.model.SetPasscodeModel
 import com.kit.showkitapp.viewmodel.EnterPassVM
 import com.legal.smart.util.ProgressBarClass
+import com.legal.smart.util.SessionManager
 import com.mindorks.retrofit.coroutines.utils.Status
 import com.shokh.sample.BaseActivity
 import kotlinx.android.synthetic.main.activity_enter_passcode.*
+import kotlinx.coroutines.launch
 
 class EnterPasscodeActivity : BaseActivity() {
 
@@ -21,6 +24,8 @@ class EnterPasscodeActivity : BaseActivity() {
 
     var mobile_no = ""
     var country_code = ""
+    var showkt_id = ""
+    var is_profile = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +33,8 @@ class EnterPasscodeActivity : BaseActivity() {
 
         mobile_no = intent.getStringExtra("MOBILE_NO").toString()
         country_code = intent.getStringExtra("COUNTRY_CODE").toString()
+        showkt_id = intent.getStringExtra("SHOWKT_ID_FLAG").toString()
+        is_profile = intent.getStringExtra("IS_PROFILE_FLAG").toString()
 
         enterPassVM = ViewModelProviders.of(this).get(EnterPassVM::class.java)
 
@@ -42,12 +49,23 @@ class EnterPasscodeActivity : BaseActivity() {
             if (edtPasscode.text.toString().trim().isNullOrEmpty()) {
                 showToast(this, "Please set your passcode")
             } else {
+/*
                 var intent = Intent(this, ProfileAddActivity::class.java)
                 intent.putExtra("MOBILE_NO", mobile_no);
                 intent.putExtra("COUNTRY_CODE", country_code);
+                intent.putExtra("SHOWKT_ID_FLAG", showkt_id);
+                startActivity(intent)*/
 
-                startActivity(intent)
-//                enterPassVM.setPasscode(edtPasscode.text.toString().trim())
+
+                lifecycleScope.launch()
+                {
+                    enterPassVM.setPasscode(
+                        sessionManager.getData(SessionManager.ACCESS_TOKEN),
+                        edtPasscode.text.toString().trim()
+                    )
+                }
+
+
             }
         }
 
@@ -65,9 +83,15 @@ class EnterPasscodeActivity : BaseActivity() {
                         var modelObj = resource.data as SetPasscodeModel
                         Log.e("resp44", "" + modelObj.toString())
                         if (modelObj.status == 1) {
-                            var intent = Intent(this, ProfileAddActivity::class.java)
-                            intent.putExtra("MOBILE_NO", mobile_no);
-                            startActivity(intent)
+                            if (showkt_id == "false") {
+                                var intent = Intent(this, ProfileAddActivity::class.java)
+                                intent.putExtra("MOBILE_NO", mobile_no);
+                                intent.putExtra("COUNTRY_CODE", country_code);
+                                intent.putExtra("SHOWKT_ID_FLAG", showkt_id);
+                                intent.putExtra("IS_PROFILE_FLAG", is_profile);
+                                startActivity(intent)
+                            }
+
                             Toast.makeText(this, modelObj.message, Toast.LENGTH_LONG).show()
                         } else {
                             Toast.makeText(this, modelObj.message, Toast.LENGTH_LONG).show()

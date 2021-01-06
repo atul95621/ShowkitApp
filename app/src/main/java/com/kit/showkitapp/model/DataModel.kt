@@ -15,9 +15,17 @@ data class ContinueMobDataModel(
     val status: Int
 )
 
+
 data class VerifyOtpDataModel(
+    val `data`: Data_Verify,
+    val is_profile: Boolean,
     val message: String,
+    val showkit_id: Boolean,
     val status: Int
+)
+
+data class Data_Verify(
+    val access_token: String
 )
 
 data class SocialLoginModel(
@@ -48,7 +56,7 @@ data class Data_Lang(
     val name: String,
     val status: Boolean,
     val updatedAt: String,
-    var isSelected:Boolean=false
+    var isSelected: Boolean = false
 
 )
 
@@ -64,7 +72,7 @@ data class Data_Category(
     val name: String,
     val status: Boolean,
     val updatedAt: String,
-    var isSelected:Boolean=false
+    var isSelected: Boolean = false
 )
 
 data class SetPasscodeModel(
