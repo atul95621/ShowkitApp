@@ -1,26 +1,27 @@
 package com.mindorks.retrofit.coroutines.data.api
 
 import com.kit.showkitapp.model.*
-import retrofit2.http.Field
-import retrofit2.http.FormUrlEncoded
-import retrofit2.http.POST
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
+import retrofit2.http.*
 
 interface ApiService {
 
-    @FormUrlEncoded
+    @Multipart
     @POST("update_user_profile")
     suspend fun updateUserProfile(
-        @Field("Authorization") auth: String,
-        @Field("user_fullname") user_fullname: String,
-        @Field("showkt_id") showkt_id: String,
-        @Field("user_gender") user_gender: String,
-        @Field("user_dob") user_dob: String,
-        @Field("is_hide_dob") is_hide_dob: String,
-        @Field("device_token") device_token: String,
-        @Field("device_id") device_id: String,
-        @Field("device_type") device_type: String,
-        @Field("from_mobile") from_mobile: String,
-        @Field("user_curent_location") user_curent_location: String
+        @Header("Authorization") auth: RequestBody,
+        @Part("user_fullname") user_fullname: RequestBody,
+        @Part("showkt_id") showkt_id: RequestBody,
+        @Part("user_gender") user_gender: RequestBody,
+        @Part("user_dob") user_dob: RequestBody,
+        @Part("is_hide_dob") is_hide_dob: RequestBody,
+        @Part("device_token") device_token: RequestBody,
+        @Part("device_id") device_id: RequestBody,
+        @Part("device_type") device_type: RequestBody,
+        @Part("from_mobile") from_mobile: RequestBody,
+        @Part("user_curent_location") user_curent_location: RequestBody,
+        @Part file: MultipartBody.Part?
     ): SignUpModel
 
 
@@ -72,7 +73,7 @@ interface ApiService {
     @FormUrlEncoded
     @POST("add_update_passcode")
     suspend fun addPasscode(
-        @Field("Authorization") auth: String,
+        @Header("Authorization") auth: String,
         @Field("passcode") passcode: String
 
     ): SetPasscodeModel

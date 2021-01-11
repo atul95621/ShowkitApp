@@ -2,21 +2,27 @@ package com.kit.showkitapp.activity
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.method.PasswordTransformationMethod
+import android.text.method.TransformationMethod
 import android.util.Log
 import android.view.WindowManager
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.lifecycle.lifecycleScope
 import com.kit.showkitapp.R
 import com.kit.showkitapp.model.SetPasscodeModel
+import com.kit.showkitapp.utils.SessionManager
 import com.kit.showkitapp.viewmodel.EnterPassVM
 import com.legal.smart.util.ProgressBarClass
-import com.legal.smart.util.SessionManager
 import com.mindorks.retrofit.coroutines.utils.Status
 import com.shokh.sample.BaseActivity
 import kotlinx.android.synthetic.main.activity_enter_passcode.*
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
+
 
 class EnterPasscodeActivity : BaseActivity() {
 
@@ -26,6 +32,7 @@ class EnterPasscodeActivity : BaseActivity() {
     var country_code = ""
     var showkt_id = ""
     var is_profile = ""
+    var eyeFlag = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,6 +51,25 @@ class EnterPasscodeActivity : BaseActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         );
 
+        imgEye.setOnClickListener()
+        {
+            if (eyeFlag == false) {
+                imgEye.setImageDrawable(ContextCompat.getDrawable(activity, R.drawable.ic_eye));
+                eyeFlag = true
+                edtPasscode.setTransformationMethod(PasswordTransformationMethod())
+                edtPasscode.setSelection(edtPasscode.getText().length);
+
+            } else {
+                imgEye.setImageDrawable(ContextCompat.getDrawable(activity, R.drawable.eye));
+
+                eyeFlag = false
+                edtPasscode.setTransformationMethod(null)
+                edtPasscode.setSelection(edtPasscode.getText().length);
+
+            }
+
+        }
+
         imgNextScreen.setOnClickListener()
         {
             if (edtPasscode.text.toString().trim().isNullOrEmpty()) {
@@ -57,12 +83,16 @@ class EnterPasscodeActivity : BaseActivity() {
                 startActivity(intent)*/
 
 
-                lifecycleScope.launch()
+                lifecycleScope.launch(Dispatchers.IO)
                 {
-                    enterPassVM.setPasscode(
-                        sessionManager.getData(SessionManager.ACCESS_TOKEN),
-                        edtPasscode.text.toString().trim()
-                    )
+                    var token = sessionManager.getData(SessionManager.ACCESS_TOKEN)
+                    token.collect { value ->
+                        Log.e("token", "" + value)
+                        enterPassVM.setPasscode(
+                            value,
+                            edtPasscode.text.toString().trim()
+                        )
+                    }
                 }
 
 

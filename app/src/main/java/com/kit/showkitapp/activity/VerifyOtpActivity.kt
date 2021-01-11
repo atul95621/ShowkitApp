@@ -18,13 +18,10 @@ import com.kit.showkitapp.model.ContinueMobDataModel
 import com.kit.showkitapp.model.VerifyOtpDataModel
 import com.kit.showkitapp.viewmodel.VerifyOtpVM
 import com.legal.smart.util.ProgressBarClass
-import com.legal.smart.util.SessionManager
+import com.kit.showkitapp.utils.SessionManager
 import com.mindorks.retrofit.coroutines.utils.Status
 import com.shokh.sample.BaseActivity
-import kotlinx.android.synthetic.main.activity_continue_mob.*
 import kotlinx.android.synthetic.main.activity_verify_otp.*
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 
 

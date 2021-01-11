@@ -33,6 +33,13 @@ class ContinueMobActivity : BaseActivity() {
     }
 
     fun clickListners() {
+
+        imgCross.setOnClickListener()
+        {
+            edtMobileNumber.setText("")
+        }
+
+
         tvCont.setOnClickListener()
         {
 
@@ -53,7 +60,7 @@ class ContinueMobActivity : BaseActivity() {
                 )
 
                 Log.e(
-                    "info11", " ${edtMobileNumber.text.toString().trim()}" +"--"+
+                    "info11", " ${edtMobileNumber.text.toString().trim()}" + "--" +
                             "${ccp.defaultCountryCode.toString().trim()}"
                 )
             }

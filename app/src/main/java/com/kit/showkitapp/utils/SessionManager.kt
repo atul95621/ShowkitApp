@@ -1,4 +1,4 @@
-package com.legal.smart.util;
+package com.kit.showkitapp.utils;
 
 import android.content.Context
 import androidx.datastore.preferences.*
@@ -49,6 +49,8 @@ class SessionManager(context: Context) {
         val ACCESS_TOKEN = preferencesKey<String>("access_token")
         val FIRST_NAME = preferencesKey<String>("first_name")
         val LAST_NAME = preferencesKey<String>("last_name")
+        val USER_INTEREST = preferencesKey<String>("user_interest")
+        val USER_LANGUAGE = preferencesKey<String>("langugae")
 
     }
 

@@ -2,31 +2,32 @@ package com.kit.showkitapp.activity
 
 import android.app.DatePickerDialog
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.view.WindowManager
-import android.widget.BaseAdapter
 import android.widget.Toast
-import androidx.lifecycle.ViewModelProviders
-import com.kit.showkitapp.R
-import com.kit.showkitapp.viewmodel.GenderVM
-import com.mindorks.retrofit.coroutines.utils.Status
-import kotlinx.android.synthetic.main.activity_gender_birth.*
-import kotlinx.android.synthetic.main.activity_gender_birth.imgNext
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
-import java.util.*
 import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
 import androidx.lifecycle.coroutineScope
-import androidx.lifecycle.lifecycleScope
+import com.kit.showkitapp.R
 import com.kit.showkitapp.model.SignUpModel
+import com.kit.showkitapp.utils.SessionManager
+import com.kit.showkitapp.viewmodel.GenderVM
 import com.legal.smart.util.ProgressBarClass
-import com.legal.smart.util.SessionManager
+import com.mindorks.retrofit.coroutines.utils.Status
 import com.shokh.sample.BaseActivity
+import kotlinx.android.synthetic.main.activity_gender_birth.*
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.launch
+import okhttp3.MediaType
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
+import java.io.File
+import java.util.*
 
-class GenderBirthActivity : BaseActivity() {
+class GenderBirthActivity() : BaseActivity() {
 
     lateinit var genderVM: GenderVM
     var mobile_no = ""
@@ -35,6 +36,8 @@ class GenderBirthActivity : BaseActivity() {
     var showkitId = ""
     var gender = ""
     var hideDOB = ""
+    var file: File? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,6 +47,8 @@ class GenderBirthActivity : BaseActivity() {
         country_code = intent.getStringExtra("COUNTRY_CODE").toString()
         userName = intent.getStringExtra("USER_NAME").toString()
         showkitId = intent.getStringExtra("SHOWKIT_ID").toString()
+        file = File(intent.getStringExtra("IMAGE_FILE"))
+
 
         genderVM = ViewModelProviders.of(this).get(GenderVM::class.java)
 
@@ -103,29 +108,49 @@ class GenderBirthActivity : BaseActivity() {
                 showToast(this, "Please enter valid date")
 
             } else {
-                var intent = Intent(this, HomeActivity::class.java)
-                startActivity(intent)
-//            signupApi()
+                /*var intent = Intent(this, HomeActivity::class.java)
+                startActivity(intent)*/
+                signupApi()
             }
 
         }
     }
 
     fun signupApi() {
-        lifecycle.coroutineScope.launch {
-            var access_token = sessionManager.getData(SessionManager.ACCESS_TOKEN)
-            genderVM.postSignup(
-                access_token.toString(),
-                userName,
-                userName,
-                showkitId,
-                gender,
-                tvDate.text.toString(),
-                hideDOB,
-                "dd41f54d54fdfklfde4r6541w 56456456e4r",
-                "", "", ""
+        var imagePart: MultipartBody.Part? = null
+        /*
 
-            )
+        // making path for image
+        val file = File(path)*/
+
+        // Create a request body with file and image media type
+        val fileReqBody = RequestBody.create(MediaType.parse("image/*"), file)
+        // Create MultipartBody.Part using file request-body,file name and part name
+        //photo is the KEY that is to be sent over server
+        imagePart = MultipartBody.Part.createFormData("file", file?.getName(), fileReqBody)
+
+        lifecycle.coroutineScope.launch(Dispatchers.IO) {
+
+            var access_token = sessionManager.getData(SessionManager.ACCESS_TOKEN)
+            access_token.collect { value ->
+                Log.e("token", "" + value)
+                genderVM.postSignup(
+                    stringConvertToRequestBody(access_token.toString()),
+                    stringConvertToRequestBody(userName),
+                    stringConvertToRequestBody(showkitId),
+                    stringConvertToRequestBody(gender),
+                    stringConvertToRequestBody(tvDate.text.toString()),
+                    stringConvertToRequestBody(hideDOB),
+                    stringConvertToRequestBody("dd41f54d54fdfklfde4r6541w 56456456e4r"),
+                    stringConvertToRequestBody(""),
+                    stringConvertToRequestBody(""),
+                    stringConvertToRequestBody(""),
+                    stringConvertToRequestBody(""),
+                    imagePart
+
+                )
+            }
+
         }
     }
 

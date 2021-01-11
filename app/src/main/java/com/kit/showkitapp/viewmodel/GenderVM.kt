@@ -5,9 +5,9 @@ import androidx.lifecycle.*
 import com.kit.showkitapp.model.SignUpModel
 import com.mindorks.retrofit.coroutines.data.api.RetrofitBuilder
 import com.mindorks.retrofit.coroutines.utils.Resource
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import retrofit2.http.Field
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
 
 class GenderVM() : ViewModel() {
 
@@ -57,17 +57,18 @@ class GenderVM() : ViewModel() {
 
 
     fun postSignup(
-        auth: String,
-        user_fullname: String,
-        showkt_id: String,
-        user_gender: String,
-        user_dob: String,
-        is_hide_dob: String,
-        device_token: String,
-        device_id: String,
-        device_type: String,
-        from_mobile: String,
-        current_location: String
+        auth: RequestBody,
+        user_fullname: RequestBody,
+        showkt_id: RequestBody,
+        user_gender: RequestBody,
+        user_dob: RequestBody,
+        is_hide_dob: RequestBody,
+        device_token: RequestBody,
+        device_id: RequestBody,
+        device_type: RequestBody,
+        from_mobile: RequestBody,
+        current_location: RequestBody,
+        imagePart: MultipartBody.Part,
     ) {
         Log.e("resp send otp:", "hitting")
         viewModelScope.launch {
@@ -86,7 +87,8 @@ class GenderVM() : ViewModel() {
                         device_id,
                         device_type,
                         from_mobile,
-                        current_location
+                        current_location,
+                        imagePart
                     )
                 )
 

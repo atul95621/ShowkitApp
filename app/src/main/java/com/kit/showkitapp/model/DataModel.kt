@@ -56,7 +56,9 @@ data class Data_Lang(
     val name: String,
     val status: Boolean,
     val updatedAt: String,
-    var isSelected: Boolean = false
+    var isSelected: Boolean = false,
+    var full_urlfile: String? = ""
+
 
 )
 
@@ -72,7 +74,8 @@ data class Data_Category(
     val name: String,
     val status: Boolean,
     val updatedAt: String,
-    var isSelected: Boolean = false
+    var isSelected: Boolean = false,
+    var full_urlfile: String? = ""
 )
 
 data class SetPasscodeModel(

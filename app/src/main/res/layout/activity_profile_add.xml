@@ -50,7 +50,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center_horizontal"
-                             android:fontFamily="@font/montserrat_bold"
+                            android:fontFamily="@font/montserrat_bold"
                             android:gravity="center_horizontal"
                             android:text="Hello!"
                             android:textColor="@color/marron_full"
@@ -60,7 +60,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center_horizontal"
-                             android:fontFamily="@font/montserrat_regular"
+                            android:fontFamily="@font/montserrat_regular"
                             android:gravity="center_horizontal"
                             android:padding="10dp"
                             android:text="Lets add your image doing exciting stuff to spice up your profile."
@@ -80,33 +80,38 @@
 
                         <EditText
                             android:id="@+id/edtName"
-                            android:maxLines="1"
                             android:layout_width="match_parent"
                             android:layout_height="45dp"
                             android:layout_marginTop="50dp"
                             android:background="@drawable/grey_light_curve"
-                             android:fontFamily="@font/montserrat_regular"
+                            android:fontFamily="@font/montserrat_regular"
                             android:hint="Your Name"
-                            android:paddingStart="10dp" />
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:singleLine="true" />
 
                         <EditText
                             android:id="@+id/edtId"
-                            android:maxLines="1"
                             android:layout_width="match_parent"
                             android:layout_height="45dp"
                             android:layout_marginTop="20dp"
                             android:background="@drawable/grey_light_curve"
-                             android:fontFamily="@font/montserrat_regular"
+                            android:fontFamily="@font/montserrat_regular"
+
                             android:hint="Your Showkt Id"
-                            android:paddingStart="10dp" />
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:singleLine="true" />
+
                         <TextView
                             android:id="@+id/validateId"
-                            android:layout_marginTop="10dp"
-                            android:layout_gravity="end"
-                            android:textColor="@color/marron_full"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="Validate showkit ID"/>
+                            android:layout_gravity="end"
+                            android:layout_marginTop="10dp"
+                            android:text="Validate showkit ID"
+                            android:textColor="@color/marron_full" />
                     </LinearLayout>
 
 

@@ -19,11 +19,8 @@ import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import androidx.loader.content.CursorLoader
-import com.google.android.material.snackbar.Snackbar
-import com.legal.smart.util.SessionManager
+import com.kit.showkitapp.utils.SessionManager
 import okhttp3.MediaType
 import okhttp3.RequestBody
 import java.io.File

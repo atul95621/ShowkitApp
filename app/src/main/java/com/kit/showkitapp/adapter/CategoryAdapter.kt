@@ -1,26 +1,20 @@
 package com.kit.showkitapp.adapter
 
+import android.app.Activity
 import android.view.LayoutInflater
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import android.widget.PopupMenu
-import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.kit.showkitapp.activity.HomeActivity
+import coil.load
 import com.kit.showkitapp.R
-import com.kit.showkitapp.fargment.DashboardFragment
-import com.kit.showkitapp.fargment.TrendingFragment
 import com.kit.showkitapp.model.Data_Category
-import com.kit.showkitapp.model.Data_Lang
-import com.kit.showkitapp.model.LanguageModel
 import kotlinx.android.synthetic.main.item_layout_category.view.*
 
 
 class CategoryAdapter(
     var arrayList: ArrayList<Data_Category>,
-    var homeActivity: HomeActivity,
-    var dashboardFragment: DashboardFragment
+    var activity: Activity
 ) : RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(
@@ -49,11 +43,22 @@ class CategoryAdapter(
         fun bind(position: Int, arrayList: Data_Category) {
 
             itemView.title.setText(arrayList.name)
-
             if (arrayList.isSelected == false) {
-                itemView.imgTickMark.visibility = View.GONE
+                itemView.linCategoryLayout.background =
+                    ContextCompat.getDrawable(activity, R.color.transparent)
             } else {
-                itemView.imgTickMark.visibility = View.VISIBLE
+//                itemView.linCategoryLayout.visibility = View.VISIBLE
+                itemView.linCategoryLayout.background =
+                    ContextCompat.getDrawable(activity, R.drawable.ppurple_border)
+
+            }
+
+            itemView.imgImage.load(arrayList.full_urlfile) {
+                /*    crossfade(750)
+                    placeholder(errorPlaceHolder)
+                    transformations(CircleCropTransformation())
+                    error(errorPlaceHolder)
+                    scale(Scale.FILL)*/
             }
 
             itemView.linCategoryLayout.setOnClickListener()

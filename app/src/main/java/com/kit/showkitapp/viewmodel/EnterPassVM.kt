@@ -14,8 +14,8 @@ class EnterPassVM : ViewModel() {
 
     var passcodeLivedata: MutableLiveData<Resource<SetPasscodeModel>> = MutableLiveData()
 
-    fun setPasscode(token: Flow<String>, passcode: String) {
-        Log.e("resp send otp:", "hitting")
+    fun setPasscode(token: String, passcode: String) {
+        Log.e("resp send otp:", "hitt-- $token $passcode")
         viewModelScope.launch {
             passcodeLivedata.value = Resource.loading(data = null)
             try {

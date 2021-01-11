@@ -1,5 +1,6 @@
 package com.kit.showkitapp.fargment
 
+import android.app.Activity
 import android.app.Dialog
 import android.content.Intent
 import android.graphics.Color
@@ -21,7 +22,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.kit.showkitapp.R
 import com.kit.showkitapp.activity.HomeActivity
 import com.kit.showkitapp.activity.SearchActivity
-import com.kit.showkitapp.activity.VerifyOtpActivity
 import com.kit.showkitapp.adapter.CategoryAdapter
 import com.kit.showkitapp.adapter.LanguageAdapter
 import com.kit.showkitapp.model.CategoryIntrestModel
@@ -31,12 +31,12 @@ import com.kit.showkitapp.model.LanguageModel
 import com.kit.showkitapp.viewmodel.DashboardVM
 import com.legal.smart.util.ProgressBarClass
 import com.mindorks.retrofit.coroutines.utils.Status
-import kotlinx.android.synthetic.main.activity_continue_mob.*
 import kotlinx.android.synthetic.main.fragment_dashboard.*
 import kotlinx.android.synthetic.main.fragment_dashboard.view.*
+import org.mobileapp.voice.util.BaseFragment
 
 
-class DashboardFragment(var homeActivity: HomeActivity) : Fragment() {
+class DashboardFragment(var homeActivity: HomeActivity) : BaseFragment() {
 
     private var recyclerView: RecyclerView? = null
     private var adapter: LanguageAdapter? = null
@@ -123,7 +123,7 @@ class DashboardFragment(var homeActivity: HomeActivity) : Fragment() {
         recyclerView = dailog.findViewById(R.id.rvLanguage) as RecyclerView
         recyclerView?.setHasFixedSize(true)
         recyclerView?.setNestedScrollingEnabled(false)
-        layoutManager = GridLayoutManager(homeActivity, 2)
+        layoutManager = LinearLayoutManager(homeActivity)
         recyclerView?.setLayoutManager(layoutManager)
     }
 
@@ -219,7 +219,7 @@ class DashboardFragment(var homeActivity: HomeActivity) : Fragment() {
         initViewRecyclerLanguage(dialog)
 
         arrayList = data
-        adapter = LanguageAdapter(arrayList, homeActivity, this)
+        adapter = LanguageAdapter(arrayList, context as Activity)
         recyclerView?.adapter = adapter
 
         adapter?.notifyDataSetChanged();
@@ -237,7 +237,7 @@ class DashboardFragment(var homeActivity: HomeActivity) : Fragment() {
         initViewRecyclerCategory(dialog)
 
         arrayListCat = data
-        adapterCat = CategoryAdapter(arrayListCat, homeActivity, this)
+        adapterCat = CategoryAdapter(arrayListCat, activity as Activity)
         recyclerViewCat?.adapter = adapterCat
 
         dialog.setCancelable(true)

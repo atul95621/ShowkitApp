@@ -26,11 +26,11 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ShowkitApp">
-        <activity android:name=".activity.SearchActivity">
-        </activity>
+        <activity android:name=".activity.SearchActivity"></activity>
         <activity android:name=".chat.NewCallActivity" />
         <activity android:name=".activity.WelcomeBackActivity" />
         <activity android:name=".chat.ChatActivity" />
@@ -46,20 +46,30 @@
         <activity android:name=".activity.GenderBirthActivity" />
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.ContinueMobActivity" />
-        <activity android:name=".activity.EnterPasscodeActivity" />
+        <activity android:name=".activity.EnterPasscodeActivity">
+            <!--  <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>-->
+        </activity>
         <activity android:name=".activity.ForgotPassword" />
         <activity android:name=".activity.OtpScreen" />
         <activity android:name=".activity.HomeActivity">
-
             <!--
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                        <intent-filter>
+                            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
+                            <category android:name="android.intent.category.LAUNCHER" />
+                        </intent-filter>-->
         </activity>
-        <activity android:name=".activity.ProfileAddActivity" />
+        <activity android:name=".activity.ProfileAddActivity" >
+                    <!--   <intent-filter>
+                           <action android:name="android.intent.action.MAIN" />
+
+                           <category android:name="android.intent.category.LAUNCHER" />
+                       </intent-filter>-->
+        </activity>
     </application>
 
 </manifest>

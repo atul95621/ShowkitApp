@@ -4,9 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.WindowManager
-import android.widget.BaseAdapter
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.lifecycle.lifecycleScope
@@ -14,12 +12,10 @@ import com.kit.showkitapp.R
 import com.kit.showkitapp.model.SocialLoginModel
 import com.kit.showkitapp.viewmodel.LoginVM
 import com.legal.smart.util.ProgressBarClass
-import com.legal.smart.util.SessionManager
+import com.kit.showkitapp.utils.SessionManager
 import com.mindorks.retrofit.coroutines.utils.Status
 import com.shokh.sample.BaseActivity
-import kotlinx.android.synthetic.main.activity_continue_mob.*
 import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
 
