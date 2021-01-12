@@ -2,6 +2,7 @@ package com.kit.showkitapp.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.*
+import com.google.gson.Gson
 import com.kit.showkitapp.activity.ContinueMobActivity
 import com.kit.showkitapp.model.ContinueMobDataModel
 import com.mindorks.retrofit.coroutines.data.api.RetrofitBuilder
@@ -26,12 +27,14 @@ class ContinueMobVM() : ViewModel() {
             sendOTPLivedata.value = Resource.loading(data = null)
             try {
                 var api = RetrofitBuilder.apiService
+                var response = api.sendOTP(
+                    mobile,
+                    country_code,
+                    from_mobile
+                )
+                Log.e("RFit2.0 gson => ", "" + Gson().toJson(response))
                 sendOTPLivedata.value = Resource.success(
-                    data = api.sendOTP(
-                        mobile,
-                        country_code,
-                        from_mobile
-                    )
+                    data = response
                 )
 
             } catch (exception: Exception) {

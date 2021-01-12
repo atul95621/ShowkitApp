@@ -135,13 +135,13 @@ class GenderBirthActivity() : BaseActivity() {
             access_token.collect { value ->
                 Log.e("token", "" + value)
                 genderVM.postSignup(
-                    stringConvertToRequestBody(access_token.toString()),
+                    value,
                     stringConvertToRequestBody(userName),
                     stringConvertToRequestBody(showkitId),
                     stringConvertToRequestBody(gender),
                     stringConvertToRequestBody(tvDate.text.toString()),
                     stringConvertToRequestBody(hideDOB),
-                    stringConvertToRequestBody("dd41f54d54fdfklfde4r6541w 56456456e4r"),
+                    stringConvertToRequestBody(""),
                     stringConvertToRequestBody(""),
                     stringConvertToRequestBody(""),
                     stringConvertToRequestBody(""),
@@ -158,19 +158,21 @@ class GenderBirthActivity() : BaseActivity() {
 
         genderVM.signUpLivedata.observe(this, Observer {
             it?.let { resource ->
-                Log.e("resp", resource.status.toString())
+                Log.e("respgenderr", resource.status.toString())
                 when (resource.status) {
                     Status.SUCCESS -> {
                         ProgressBarClass.dialog.dismiss()
-                        var modelObj = resource.data as SignUpModel
-                        Log.e("resp44", "" + modelObj.toString())
-                        if (modelObj.status == 1) {
-                            var intent = Intent(this, HomeActivity::class.java)
-                            startActivity(intent)
-                            Toast.makeText(this, modelObj.message, Toast.LENGTH_LONG).show()
-                        } else {
-                            Toast.makeText(this, modelObj.message, Toast.LENGTH_LONG).show()
-                        }
+                        Log.e("respgender", "" + resource.data.toString())
+
+                           var modelObj = resource.data as SignUpModel
+                           Log.e("resp44", "" + modelObj.toString())
+                           if (modelObj.status == 1) {
+                               var intent = Intent(this, HomeActivity::class.java)
+                               startActivity(intent)
+                               Toast.makeText(this, modelObj.message, Toast.LENGTH_LONG).show()
+                           } else {
+                               Toast.makeText(this, modelObj.message, Toast.LENGTH_LONG).show()
+                           }
                     }
                     Status.ERROR -> {
                         ProgressBarClass.dialog.dismiss()

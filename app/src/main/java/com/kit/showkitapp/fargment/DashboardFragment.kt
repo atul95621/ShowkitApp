@@ -16,11 +16,13 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.kit.showkitapp.R
 import com.kit.showkitapp.activity.HomeActivity
+import com.kit.showkitapp.activity.LoginActivity
 import com.kit.showkitapp.activity.SearchActivity
 import com.kit.showkitapp.adapter.CategoryAdapter
 import com.kit.showkitapp.adapter.LanguageAdapter
@@ -28,11 +30,16 @@ import com.kit.showkitapp.model.CategoryIntrestModel
 import com.kit.showkitapp.model.Data_Category
 import com.kit.showkitapp.model.Data_Lang
 import com.kit.showkitapp.model.LanguageModel
+import com.kit.showkitapp.utils.SessionManager
 import com.kit.showkitapp.viewmodel.DashboardVM
 import com.legal.smart.util.ProgressBarClass
 import com.mindorks.retrofit.coroutines.utils.Status
+import kotlinx.android.synthetic.main.dailog_image_select.*
+import kotlinx.android.synthetic.main.dailog_language.*
 import kotlinx.android.synthetic.main.fragment_dashboard.*
 import kotlinx.android.synthetic.main.fragment_dashboard.view.*
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import org.mobileapp.voice.util.BaseFragment
 
 
@@ -49,6 +56,7 @@ class DashboardFragment(var homeActivity: HomeActivity) : BaseFragment() {
     internal lateinit var layoutManagerCat: LinearLayoutManager
     var arrayListCat = ArrayList<Data_Category>()
 
+    lateinit var sessionManager: SessionManager
 
     lateinit var dashboardVM: DashboardVM
 
@@ -56,6 +64,7 @@ class DashboardFragment(var homeActivity: HomeActivity) : BaseFragment() {
         super.onCreate(savedInstanceState)
 
         dashboardVM = ViewModelProviders.of(this).get(DashboardVM::class.java)
+        sessionManager = SessionManager(homeActivity)
 
 
     }
@@ -66,6 +75,11 @@ class DashboardFragment(var homeActivity: HomeActivity) : BaseFragment() {
     ): View? {
         // Inflate the layout for this fragment
         var view = inflater.inflate(R.layout.fragment_dashboard, container, false)
+
+        lifecycleScope.launch {
+            sessionManager.setData(SessionManager.IS_LOGGED_IN, "1")
+        }
+
         return view
     }
 
@@ -213,8 +227,19 @@ class DashboardFragment(var homeActivity: HomeActivity) : BaseFragment() {
         dialog.setContentView(R.layout.dailog_language)
         /* dialog.getWindow()
              ?.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)*/
+        dialog.getWindow()
+            ?.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
         dialog.getWindow()?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT));
         dialog.setCancelable(true)
+
+        dialog.tvSaveLang.setOnClickListener()
+        {
+            dialog.dismiss()
+            lifecycleScope.launch(Dispatchers.Main) {
+                sessionManager.setData(SessionManager.USER_LANGUAGE, "1")
+            }
+        }
+
 
         initViewRecyclerLanguage(dialog)
 
@@ -230,8 +255,10 @@ class DashboardFragment(var homeActivity: HomeActivity) : BaseFragment() {
         val dialog = Dialog(homeActivity)
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setContentView(R.layout.dailog_image_select)
+        /*     dialog.getWindow()
+                 ?.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)*/
         dialog.getWindow()
-            ?.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
+            ?.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
         dialog.getWindow()?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT));
 
         initViewRecyclerCategory(dialog)
@@ -239,6 +266,14 @@ class DashboardFragment(var homeActivity: HomeActivity) : BaseFragment() {
         arrayListCat = data
         adapterCat = CategoryAdapter(arrayListCat, activity as Activity)
         recyclerViewCat?.adapter = adapterCat
+
+        dialog.tvSave.setOnClickListener()
+        {
+            dialog.dismiss()
+            lifecycleScope.launch(Dispatchers.Main) {
+                sessionManager.setData(SessionManager.USER_INTEREST, "1")
+            }
+        }
 
         dialog.setCancelable(true)
         dialog.show()

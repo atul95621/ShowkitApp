@@ -2,9 +2,12 @@ package com.kit.showkitapp.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.*
+import com.google.gson.Gson
+import com.google.gson.JsonElement
 import com.kit.showkitapp.model.SignUpModel
 import com.mindorks.retrofit.coroutines.data.api.RetrofitBuilder
 import com.mindorks.retrofit.coroutines.utils.Resource
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
@@ -57,7 +60,7 @@ class GenderVM() : ViewModel() {
 
 
     fun postSignup(
-        auth: RequestBody,
+        auth: String,
         user_fullname: RequestBody,
         showkt_id: RequestBody,
         user_gender: RequestBody,
@@ -71,30 +74,42 @@ class GenderVM() : ViewModel() {
         imagePart: MultipartBody.Part,
     ) {
         Log.e("resp send otp:", "hitting")
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.Main) {
             signUpLivedata.value = Resource.loading(data = null)
             try {
                 var api = RetrofitBuilder.apiService
+                var response = api.updateUserProfile(
+                    auth,
+                    user_fullname,
+                    showkt_id,
+                    user_gender,
+                    user_dob,
+                    is_hide_dob,
+                    device_token,
+                    device_id,
+                    device_type,
+                    from_mobile,
+                    current_location,
+                    imagePart
+                )
+
+                Log.e(
+                    "RFit2.0 gson => ",
+                    "" + Gson().toJson(response) + "\n status code:" + response
+                )
+
                 signUpLivedata.value = Resource.success(
-                    data = api.updateUserProfile(
-                        auth,
-                        user_fullname,
-                        showkt_id,
-                        user_gender,
-                        user_dob,
-                        is_hide_dob,
-                        device_token,
-                        device_id,
-                        device_type,
-                        from_mobile,
-                        current_location,
-                        imagePart
-                    )
+                    data = response
                 )
 
             } catch (exception: Exception) {
                 signUpLivedata.value =
                     Resource.error(data = null, message = exception.message ?: "Error Occurred!")
+
+                Log.e(
+                    "error23",
+                    "" + exception.stackTraceToString() + "\n" + exception.localizedMessage + "\n" + exception.printStackTrace()
+                )
             }
 
         }

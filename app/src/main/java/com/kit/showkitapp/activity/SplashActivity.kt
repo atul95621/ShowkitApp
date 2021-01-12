@@ -31,9 +31,12 @@ import com.legal.smart.util.ProgressBarClass
 import com.kit.showkitapp.utils.SessionManager
 import com.mindorks.retrofit.coroutines.utils.Status
 import com.shokh.sample.BaseActivity
+import kotlinx.android.synthetic.main.activity_gender_birth.*
 import kotlinx.android.synthetic.main.dailog_image_select.*
 import kotlinx.android.synthetic.main.dailog_language.*
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.awaitAll
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 
@@ -55,6 +58,7 @@ class SplashActivity : BaseActivity() {
 
     var interest_selected = ""
     var language_selected = ""
+    var isLoggedIn = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -73,9 +77,34 @@ class SplashActivity : BaseActivity() {
 
         lifecycleScope.launch(Dispatchers.Main) {
 
+            var isLogged = sessionManager.getData(SessionManager.IS_LOGGED_IN)
             var interest = sessionManager.getData(SessionManager.USER_INTEREST)
             var language = sessionManager.getData(SessionManager.USER_LANGUAGE)
 
+
+            /*    isLogged.collect { value ->
+                    isLoggedIn = value
+                    Log.e("33", "" + isLoggedIn)
+
+                    if (value == "1") {
+                        val i = Intent(this@SplashActivity, HomeActivity::class.java)
+                        startActivity(i)
+                        finish()
+                    }
+                }
+                */
+
+            isLogged.asLiveData().observe(this@SplashActivity)
+            { value ->
+                isLoggedIn = value
+                Log.e("33", "" + isLoggedIn)
+
+                if (value == "1") {
+                    val i = Intent(this@SplashActivity, HomeActivity::class.java)
+                    startActivity(i)
+                    finish()
+                }
+            }
 
             interest.asLiveData().observe(this@SplashActivity)
             { data ->
@@ -85,16 +114,18 @@ class SplashActivity : BaseActivity() {
 
             language.asLiveData().observe(this@SplashActivity)
             { data ->
-                language_selected = data
-                Log.e("45", "" + language_selected)
-                if (interest_selected.isNullOrEmpty() == true && language_selected.isNullOrEmpty() == true) {
-                    dashboardVM.getLanguageApi()
-                } else if (interest_selected.isNullOrEmpty() == false && language_selected.isNullOrEmpty() == false) {
-                    Handler().postDelayed(Runnable { // This method will be executed once the timer is over
-                        val i = Intent(this@SplashActivity, LoginActivity::class.java)
-                        startActivity(i)
-                        finish()
-                    }, 2000)
+                if (isLoggedIn != "1") {
+                    language_selected = data
+                    Log.e("45", "" + language_selected)
+                    if (interest_selected.isNullOrEmpty() == true && language_selected.isNullOrEmpty() == true) {
+                        dashboardVM.getLanguageApi()
+                    } else if (interest_selected.isNullOrEmpty() == false && language_selected.isNullOrEmpty() == false) {
+                        Handler().postDelayed(Runnable { // This method will be executed once the timer is over
+                            val i = Intent(this@SplashActivity, LoginActivity::class.java)
+                            startActivity(i)
+                            finish()
+                        }, 2000)
+                    }
                 }
             }
         }

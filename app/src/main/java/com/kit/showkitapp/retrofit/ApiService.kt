@@ -1,5 +1,6 @@
 package com.mindorks.retrofit.coroutines.data.api
 
+import com.google.gson.JsonElement
 import com.kit.showkitapp.model.*
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
@@ -10,7 +11,7 @@ interface ApiService {
     @Multipart
     @POST("update_user_profile")
     suspend fun updateUserProfile(
-        @Header("Authorization") auth: RequestBody,
+        @Header("Authorization") auth: String,
         @Part("user_fullname") user_fullname: RequestBody,
         @Part("showkt_id") showkt_id: RequestBody,
         @Part("user_gender") user_gender: RequestBody,

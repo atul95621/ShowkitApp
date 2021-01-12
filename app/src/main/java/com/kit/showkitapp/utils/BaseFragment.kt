@@ -42,7 +42,7 @@ open class BaseFragment : Fragment() {
 
     //utils
 //    lateinit var connectionDetector: ConnectivityManager
-    lateinit var sessionManager: SessionManager
+//    lateinit var sessionManager: SessionManager
    lateinit var progressDialog: Dialog
 
      var activity: Activity? = null
